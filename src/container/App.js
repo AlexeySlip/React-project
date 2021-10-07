@@ -8,6 +8,7 @@ const App = () => {
         <>
             <CssBaseline />
             <Header />
+            <Main />
         </>
     )
 }
