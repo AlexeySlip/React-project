@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { Link } from 'react-router-dom'
 
 const Menu = () => {
     const [navMobileMenu, setNavMobileMenu] = useState('nav-mobile-menu')
@@ -25,19 +26,19 @@ const Menu = () => {
                 <div className="menu">
                     <ul>
                         <li>
-                            <a href="*">Home</a>
+                            <Link to="/">Home</Link>
                         </li>
                         <li>
-                            <a href="*">About me</a>
+                            <Link to="/AboutMe">About me</Link>
                         </li>
                         <li>
-                            <a href="*">Blog</a>
+                            <Link to="/Blog">Blog</Link>
                         </li>
                         <li>
-                            <a href="*">Single article</a>
+                            <Link to="/SingleArticle">Single article</Link>
                         </li>
                         <li>
-                            <a href="*">Gallery</a>
+                            <Link to="/Gallery">Gallery</Link>
                         </li>
                     </ul>
                 </div>

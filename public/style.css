@@ -1,3 +1,6 @@
+body {
+    background-color: #1f1e1b !important;
+}
 .container {
     width: 100%;
     padding-left: 15px;
@@ -112,6 +115,24 @@ header .container {
     }
     .header-container {
         position: absolute;
+    }
+    .promo-btn {
+        margin: 0 10px;
+    }
+    .promo-section {
+        padding: 350px 0;
+    }
+    .alps h2 {
+        font-size: 48px;
+        line-height: 58px;
+        font-weight: 700;
+        letter-spacing: 0px;
+    }
+    .alps h6 {
+        font-size: 13px;
+        line-height: 25px;
+        font-weight: 500;
+        letter-spacing: 0px;
     }
 }
 /* laptop */
@@ -261,11 +282,89 @@ header .container {
     .header-container {
         background-color: black;
     }
+    .promo-section {
+        padding: 150px 0;
+    }
+    .promo-btns {
+        flex-direction: column;
+        align-items: center;
+    }
+    .promo-btn {
+        margin: 10px 10px;
+    }
+    .alps h2 {
+        font-size: 29px;
+        line-height: 35px;
+        letter-spacing: 0px;
+    }
+    .alps h6 {
+        font-size: 13px;
+        line-height: 19px;
+        letter-spacing: 0px;
+    }
 }
 .promo-section {
     position: relative;
     z-index: 1;
     background: url('/images/promo-section.jpg') center center no-repeat;
     background-size: cover;
-    padding: 500px;
+}
+.promo-section-content {
+    display: flex;
+    justify-content: center;
+}
+.promo-section h2 {
+    color: white;
+    line-height: 53px;
+    letter-spacing: 0px;
+    font-weight: 700;
+    font-size: 53px;
+    text-align: center;
+}
+.promo-section p {
+    color: #a6c354;
+    text-align: center;
+    margin-bottom: 40px;
+    font-weight: 400;
+    font-size: 19px;
+}
+.promo-btns {
+    display: flex;
+    justify-content: center;
+}
+.promo-btn {
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 19px;
+    border-color: rgb(48, 60, 42);
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 3px;
+    padding: 15px 35px;
+    width: 170px;
+    text-align: center;
+}
+.promo-btn:hover {
+    background-color: #a6c354;
+}
+.alps img {
+    width: 100%;
+}
+.alps h2 {
+    color: white;
+    margin-bottom: 0 0 5px;
+}
+.alps h6 {
+    color: #a6c354;
+    margin-bottom: 15px;
+}
+.alps p {
+    color: white;
+    margin-bottom: 15px;
+}
+.check {
+    background: url(../src/assets/home_behind_pic10.png) no-repeat left 3px;
+    padding-left: 35px;
 }
