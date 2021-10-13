@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
 body {
     background-color: #1f1e1b !important;
 }
@@ -122,7 +124,7 @@ header .container {
     .promo-section {
         padding: 350px 0;
     }
-    .alps h2 {
+    .alps h3 {
         font-size: 48px;
         line-height: 58px;
         font-weight: 700;
@@ -292,7 +294,7 @@ header .container {
     .promo-btn {
         margin: 10px 10px;
     }
-    .alps h2 {
+    .alps h3 {
         font-size: 29px;
         line-height: 35px;
         letter-spacing: 0px;
@@ -314,10 +316,7 @@ header .container {
     justify-content: center;
 }
 .promo-section h2 {
-    color: white;
     line-height: 53px;
-    letter-spacing: 0px;
-    font-weight: 700;
     font-size: 53px;
     text-align: center;
 }
@@ -349,22 +348,82 @@ header .container {
 .promo-btn:hover {
     background-color: #a6c354;
 }
-.alps img {
-    width: 100%;
+.alps {
+    margin-bottom: 15px;
 }
-.alps h2 {
+.head-post-image,
+.alps-image {
+    display: inline-block;
+    overflow: hidden;
+}
+.alps-image img,
+.head-post-image img {
+    width: 100%;
+    transition: all 0.7s ease-in-out;
+    display: block;
+}
+.alps-image img:hover,
+.head-post-image img:hover {
+    transform: scale(1.1);
+}
+.alps h3 {
     color: white;
-    margin-bottom: 0 0 5px;
+    margin: 0 0 5px;
+    font-family: 'PT Serif', Helvetica, Arial, sans-serif;
 }
 .alps h6 {
     color: #a6c354;
-    margin-bottom: 15px;
+    margin: 0 0 15px;
 }
 .alps p {
     color: white;
     margin-bottom: 15px;
 }
 .check {
-    background: url(../src/assets/home_behind_pic10.png) no-repeat left 3px;
+    display: block;
+    background: url('https://themes.muffingroup.com/be/wanderer/wp-content/uploads/2017/12/home_behind_pic10.png')
+        no-repeat left 3px;
     padding-left: 35px;
+}
+.alps-text {
+    padding: 40px 0 0 10%;
+}
+h2 {
+    font-size: 48px;
+    line-height: 58px;
+    font-weight: 700;
+    letter-spacing: 0px;
+    color: white;
+    font-family: 'PT Serif', Helvetica, Arial, sans-serif;
+}
+.head-post-head {
+    color: #a8a8a8;
+}
+.head-post-head a {
+    text-decoration: none;
+    color: #a8a8a8;
+    border-bottom: 1px dotted;
+}
+.head-post-title h2 {
+    font-size: 130%;
+    line-height: 140%;
+}
+.head-post-title a {
+    text-decoration: none;
+    color: white;
+}
+.head-post-excerpt {
+    color: white;
+}
+.head-post-footer {
+    display: flex;
+    justify-content: flex-end;
+}
+.head-post-footer a {
+    text-decoration: none;
+    color: #a6c354;
+}
+.head-post-footer a:hover {
+    text-decoration: underline;
+    color: #81a029;
 }
