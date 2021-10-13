@@ -1,15 +1,15 @@
 import React from 'react'
-import HeadArticlesArray from './HeadArticlesArray'
-import HeadArticlesItem from './HeadArticlesItem'
+import HomeArticlesArray from './HomeArticlesArray'
+import HomeArticlesItem from './HomeArticlesItem'
 
-const HeadArticles = () => {
+const HomeArticles = () => {
     return (
         <>
-            {HeadArticlesArray.map(
+            {HomeArticlesArray.map(
                 ({ id, image, category, date, title, text, likes }) => (
                     <div className="col-xs-12 col-md-4 col-sm-4">
                         <div className="home-post">
-                            <HeadArticlesItem
+                            <HomeArticlesItem
                                 id={id}
                                 image={image}
                                 category={category}
@@ -26,4 +26,4 @@ const HeadArticles = () => {
     )
 }
 
-export default HeadArticles
+export default HomeArticles

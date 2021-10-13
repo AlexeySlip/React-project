@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-const HeadArticlesItem = ({
+const HomeArticlesItem = ({
     id,
     image,
     category,
@@ -12,26 +12,26 @@ const HeadArticlesItem = ({
 }) => {
     return (
         <>
-            <div className="head-post-image">
+            <div className="home-post-image">
                 <Link>
                     <img src={image} />
                 </Link>
             </div>
-            <div className="head-post-text">
-                <div className="head-post-head">
+            <div className="home-post-text">
+                <div className="home-post-head">
                     <i></i>
                     <Link>{category}</Link>
                     <span> at</span>
                     <i></i>
                     <span> {date}</span>
                 </div>
-                <div className="head-post-title">
+                <div className="home-post-title">
                     <h2>
                         <Link>{title}</Link>
                     </h2>
                 </div>
-                <div className="head-post-excerpt">{text}</div>
-                <div className="head-post-footer">
+                <div className="home-post-excerpt">{text}</div>
+                <div className="home-post-footer">
                     <Link>Read more</Link>
                 </div>
             </div>
@@ -39,4 +39,4 @@ const HeadArticlesItem = ({
     )
 }
 
-export default HeadArticlesItem
+export default HomeArticlesItem

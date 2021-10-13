@@ -1,4 +1,4 @@
-const HeadArticlesArray = [
+const HomeArticlesArray = [
     {
         id: '1',
         image: '/images/home_behind_blog1-960x720.jpg',
@@ -28,4 +28,4 @@ const HeadArticlesArray = [
     },
 ]
 
-export default HeadArticlesArray
+export default HomeArticlesArray

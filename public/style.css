@@ -351,19 +351,19 @@ header .container {
 .alps {
     margin-bottom: 15px;
 }
-.head-post-image,
+.home-post-image,
 .alps-image {
     display: inline-block;
     overflow: hidden;
 }
 .alps-image img,
-.head-post-image img {
+.home-post-image img {
     width: 100%;
     transition: all 0.7s ease-in-out;
     display: block;
 }
 .alps-image img:hover,
-.head-post-image img:hover {
+.home-post-image img:hover {
     transform: scale(1.1);
 }
 .alps h3 {
@@ -396,34 +396,45 @@ h2 {
     color: white;
     font-family: 'PT Serif', Helvetica, Arial, sans-serif;
 }
-.head-post-head {
+.last-news {
+    margin-bottom: 40px;
+}
+.home-post {
+    margin-bottom: 20px;
+}
+.home-post-text {
+    padding: 20px 20px 0;
+}
+.home-post-head {
     color: #a8a8a8;
 }
-.head-post-head a {
+.home-post-head a {
     text-decoration: none;
     color: #a8a8a8;
     border-bottom: 1px dotted;
 }
-.head-post-title h2 {
+.home-post-title h2 {
     font-size: 130%;
     line-height: 140%;
+    margin: 10px 0 15px;
 }
-.head-post-title a {
+.home-post-title a {
     text-decoration: none;
     color: white;
 }
-.head-post-excerpt {
+.home-post-excerpt {
     color: white;
+    margin-bottom: 15px;
 }
-.head-post-footer {
+.home-post-footer {
     display: flex;
     justify-content: flex-end;
 }
-.head-post-footer a {
+.home-post-footer a {
     text-decoration: none;
     color: #a6c354;
 }
-.head-post-footer a:hover {
+.home-post-footer a:hover {
     text-decoration: underline;
     color: #81a029;
 }
