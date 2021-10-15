@@ -14,18 +14,20 @@ export default class LazyLoad extends React.Component {
         }
         return (
             <div>
-                <h2> Videos</h2>
-                <Slider {...settings}>
-                    <div className="slick-image">
-                        <img src="/images/home_behind_pic6.jpg" />
-                    </div>
-                    <div className="slick-image">
-                        <img src="/images/home_behind_pic7.jpg" />
-                    </div>
-                    <div className="slick-image">
-                        <img src="/images/home_behind_pic8.jpg" />
-                    </div>
-                </Slider>
+                <section className="videos">
+                    <h2> Videos</h2>
+                    <Slider {...settings}>
+                        <div className="slick-image">
+                            <img src="/images/home_behind_pic6.jpg" />
+                        </div>
+                        <div className="slick-image">
+                            <img src="/images/home_behind_pic7.jpg" />
+                        </div>
+                        <div className="slick-image">
+                            <img src="/images/home_behind_pic8.jpg" />
+                        </div>
+                    </Slider>
+                </section>
             </div>
         )
     }
