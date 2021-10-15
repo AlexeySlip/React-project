@@ -19,8 +19,8 @@ const PhotoGallery = () => {
                                 malesuada fames ac turpis velit.
                             </p>
                             <div className="photo-gallery-btns">
-                                <Link>Show photos</Link>
-                                <Link>Instagram</Link>
+                                <Link to="/Gallery">Show photos</Link>
+                                <Link to="/">Instagram</Link>
                             </div>
                         </div>
                     </div>

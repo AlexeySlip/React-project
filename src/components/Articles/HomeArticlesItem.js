@@ -20,7 +20,8 @@ const HomeArticlesItem = ({
             <div className="home-post-text">
                 <div className="home-post-head">
                     <i></i>
-                    <Link>{category}</Link>
+                    <span className="green-text">Category: </span>
+                    <Link to={category}>{category}</Link>
                     <span> at</span>
                     <i></i>
                     <span> {date}</span>

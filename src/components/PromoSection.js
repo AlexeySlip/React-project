@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const PromoSection = () => {
     return (
@@ -16,12 +17,12 @@ const PromoSection = () => {
                                 ultrices posuere cubilia Curae.
                             </p>
                             <div className="promo-btns">
-                                <a href="*" className="promo-btn">
+                                <Link to="/AboutMe" className="promo-btn">
                                     Read more
-                                </a>
-                                <a href="*" className="promo-btn">
+                                </Link>
+                                <Link to="/Blog" className="promo-btn">
                                     My blog
-                                </a>
+                                </Link>
                             </div>
                         </div>
                     </div>
