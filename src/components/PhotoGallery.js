@@ -26,7 +26,7 @@ const PhotoGallery = () => {
                     </div>
                 </div>
                 <div className="photo-gallery-image">
-                    <img src="./images/home_behind_pic9.jpg" />
+                    <img src="./images/home_behind_pic9.jpg" alt="" />
                 </div>
             </section>
         </>

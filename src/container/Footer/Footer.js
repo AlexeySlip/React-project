@@ -11,7 +11,10 @@ const Footer = () => {
                             <div className="col-xs-12 col-md-6 col-sm-6">
                                 <div className="ащщеук-information">
                                     <Link to="/">
-                                        <img src="/images/wanderer.png"></img>
+                                        <img
+                                            src="/images/wanderer.png"
+                                            alt=""
+                                        ></img>
                                     </Link>
                                     <div className="footer-text">
                                         <p>

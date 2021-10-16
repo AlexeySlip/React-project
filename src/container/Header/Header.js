@@ -12,7 +12,10 @@ const Header = () => {
                             <div className="col-xs-12 col-md-4 col-sm-4">
                                 <div className="logo">
                                     <Link to="/">
-                                        <img src="/images/wanderer.png"></img>
+                                        <img
+                                            src="/images/wanderer.png"
+                                            alt=""
+                                        ></img>
                                     </Link>
                                 </div>
                             </div>
