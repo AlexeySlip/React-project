@@ -14,7 +14,7 @@ const HomeArticlesItem = ({
         <>
             <div className="home-post-image">
                 <Link>
-                    <img src={image} />
+                    <img src={image} alt="" />
                 </Link>
             </div>
             <div className="home-post-text">

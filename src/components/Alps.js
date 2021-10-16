@@ -8,7 +8,7 @@ const Alps = () => {
                     <div className="row">
                         <div className="col-xs-12 col-md-6 col-sm-6">
                             <div className="alps-image">
-                                <img src="/images/alps.jpg" />
+                                <img src="/images/alps.jpg" alt="" />
                             </div>
                         </div>
                         <div className="col-xs-12 col-md-6 col-sm-6">

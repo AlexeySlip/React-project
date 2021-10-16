@@ -18,13 +18,13 @@ export default class LazyLoad extends React.Component {
                     <h2> Videos</h2>
                     <Slider {...settings}>
                         <div className="slick-image">
-                            <img src="/images/home_behind_pic6.jpg" />
+                            <img src="/images/home_behind_pic6.jpg" alt="" />
                         </div>
                         <div className="slick-image">
-                            <img src="/images/home_behind_pic7.jpg" />
+                            <img src="/images/home_behind_pic7.jpg" alt="" />
                         </div>
                         <div className="slick-image">
-                            <img src="/images/home_behind_pic8.jpg" />
+                            <img src="/images/home_behind_pic8.jpg" alt="" />
                         </div>
                     </Slider>
                 </section>
@@ -32,40 +32,3 @@ export default class LazyLoad extends React.Component {
         )
     }
 }
-
-// export default class SimpleSlider extends React.Component {
-//     render() {
-//         const settings = {
-//             dots: true,
-//             infinite: true,
-//             speed: 500,
-//             slidesToShow: 1,
-//             slidesToScroll: 1,
-//         }
-//         return (
-//             <div>
-//                 <h2> Single Item</h2>
-//                 <Slider {...settings}>
-//                     <div>
-//                         <img src="/images/home_behind_pic8.jpg" />
-//                     </div>
-//                     <div>
-//                         <img src="/images/home_behind_pic8.jpg" />
-//                     </div>
-//                     <div>
-//                         <img src="/images/home_behind_pic8.jpg" />
-//                     </div>
-//                     <div>
-//                         <h3>4</h3>
-//                     </div>
-//                     <div>
-//                         <h3>5</h3>
-//                     </div>
-//                     <div>
-//                         <h3>6</h3>
-//                     </div>
-//                 </Slider>
-//             </div>
-//         )
-//     }
-// }

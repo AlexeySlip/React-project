@@ -11,7 +11,10 @@ const WhatYouNeed = () => {
                         </div>
                         <div className="col-xs-12 col-md-3 col-sm-6">
                             <div className="what-you-need-image">
-                                <img src="./images/home_behind_pic2.png" />
+                                <img
+                                    src="./images/home_behind_pic2.png"
+                                    alt=""
+                                />
                             </div>
                             <h4>Waterproof tent</h4>
                             <p>
@@ -22,7 +25,10 @@ const WhatYouNeed = () => {
                         </div>
                         <div className="col-xs-12 col-md-3 col-sm-6">
                             <div className="what-you-need-image">
-                                <img src="./images/home_behind_pic3.png" />
+                                <img
+                                    src="./images/home_behind_pic3.png"
+                                    alt=""
+                                />
                             </div>
                             <h4>Neccessary tools</h4>
                             <p>
@@ -33,7 +39,10 @@ const WhatYouNeed = () => {
                         </div>
                         <div className="col-xs-12 col-md-3 col-sm-6">
                             <div className="what-you-need-image">
-                                <img src="./images/home_behind_pic4.png" />
+                                <img
+                                    src="./images/home_behind_pic4.png"
+                                    alt=""
+                                />
                             </div>
                             <h4>Important quipment</h4>
                             <p>
@@ -44,7 +53,10 @@ const WhatYouNeed = () => {
                         </div>
                         <div className="col-xs-12 col-md-3 col-sm-6">
                             <div className="what-you-need-image">
-                                <img src="./images/home_behind_pic5.png" />
+                                <img
+                                    src="./images/home_behind_pic5.png"
+                                    alt=""
+                                />
                             </div>
                             <h4>Compass or GPS device</h4>
                             <p>
