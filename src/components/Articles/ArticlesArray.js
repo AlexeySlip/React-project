@@ -7,6 +7,7 @@ const HomeArticlesArray = [
         title: 'Vestibulum dapibus mauris',
         text: 'Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis. Maecenas malesuada elit lectus felis, malesuada ultricies. Curabitur et ligula. Ut molestie a, ultricies porta urna. Vestibulum commodo volutpat dolor.',
         likes: 268,
+        place: 'Home',
     },
     {
         id: '2',
@@ -16,6 +17,7 @@ const HomeArticlesArray = [
         title: 'Nulla ipsum dolor lacus',
         text: 'Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis. Maecenas malesuada elit lectus felis, malesuada ultricies. Curabitur et ligula. Ut molestie a, ultricies porta urna. Vestibulum commodo volutpat dolor.',
         likes: 193,
+        place: 'Home',
     },
     {
         id: '3',
@@ -25,6 +27,25 @@ const HomeArticlesArray = [
         title: 'Cum sociis natoque penatibus et ultrices volutpat',
         text: 'Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis. Maecenas malesuada elit lectus felis, malesuada ultricies. Curabitur et ligula. Ut molestie a, ultricies porta urna. Vestibulum commodo volutpat dolor.',
         likes: 217,
+        place: 'Home',
+    },
+    {
+        id: '4',
+        image: '/images/home_behind_blog4-960x720.jpg',
+        category: 'Tropical',
+        date: 'November 8, 2021',
+        title: 'Quisque cursus et',
+        text: 'Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis. Maecenas malesuada elit lectus felis, malesuada ultricies. Curabitur et ligula. Ut molestie a, ultricies porta urna. Vestibulum commodo volutpat dolor.',
+        likes: 156,
+    },
+    {
+        id: '5',
+        image: '/images/home_behind_blog5-960x720.jpg',
+        category: 'Temperate',
+        date: 'September 13, 2021',
+        title: 'Aliquam sem',
+        text: 'Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis. Maecenas malesuada elit lectus felis, malesuada ultricies. Curabitur et ligula. Ut molestie a, ultricies porta urna. Vestibulum commodo volutpat dolor.',
+        likes: 207,
     },
 ]
 

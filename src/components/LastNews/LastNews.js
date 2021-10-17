@@ -1,5 +1,5 @@
 import React from 'react'
-import HomeArticles from './Articles/HomeArticles'
+import HomeArticles from '../Articles/HomeArticles'
 
 const LastNews = () => {
     return (

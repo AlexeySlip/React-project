@@ -124,10 +124,10 @@ header .container {
     .header-container {
         position: absolute;
     }
-    .promo-btn {
+    .home-upper-section-btn {
         margin: 0 10px;
     }
-    .promo-section {
+    .home-upper-section {
         padding: 350px 0;
     }
     .alps h3 {
@@ -293,10 +293,10 @@ header .container {
     .header-container {
         background-color: black;
     }
-    .promo-section {
+    .home-upper-section {
         padding: 150px 0;
     }
-    .promo-btns {
+    .home-upper-section-btns {
         flex-direction: column;
         align-items: center;
     }
@@ -327,33 +327,33 @@ header .container {
         text-align: center;
     }
 }
-.promo-section {
+.home-upper-section {
     position: relative;
     z-index: 1;
-    background: url('/images/promo-section.jpg') center center no-repeat;
+    background: url('/images/home-upper-section.jpg') center center no-repeat;
     background-size: cover;
 }
-.promo-section-content {
+.home-upper-section-content {
     display: flex;
     justify-content: center;
 }
-.promo-section h2 {
+.home-upper-section h2 {
     line-height: 53px;
     font-size: 53px;
     text-align: center;
 }
-.promo-section p {
+.home-upper-section p {
     color: #a6c354;
     text-align: center;
     margin-bottom: 40px;
     font-weight: 400;
     font-size: 19px;
 }
-.promo-btns {
+.home-upper-section-btns {
     display: flex;
     justify-content: center;
 }
-.promo-btn {
+.home-upper-section-btn {
     text-decoration: none;
     color: white;
     cursor: pointer;
@@ -367,7 +367,7 @@ header .container {
     width: 170px;
     text-align: center;
 }
-.promo-btn:hover {
+.home-upper-section-btn:hover {
     background-color: #a6c354;
 }
 .alps {

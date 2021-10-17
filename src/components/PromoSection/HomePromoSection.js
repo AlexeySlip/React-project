@@ -1,13 +1,13 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-const PromoSection = () => {
+const HomePromoSection = () => {
     return (
-        <section className="promo-section">
-            <container>
-                <row>
-                    <div className="promo-section-content">
-                        <div className="col-xs-12 col-md-7 col-sm-9">
+        <section className="home-upper-section">
+            <div className="container">
+                <div className="row">
+                    <div className="home-upper-section-content">
+                        <div className="col-xs-12 col-md-9 col-sm-12">
                             <h2>Get out and explore </h2>
                             <p>
                                 Quisque lorem tortor fringilla sed, vestibulum
@@ -16,20 +16,26 @@ const PromoSection = () => {
                                 lobortis quis, varius in, purus. Integer
                                 ultrices posuere cubilia Curae.
                             </p>
-                            <div className="promo-btns">
-                                <Link to="/AboutMe" className="promo-btn">
+                            <div className="home-upper-section-btns">
+                                <Link
+                                    to="/AboutMe"
+                                    className="home-upper-section-btn"
+                                >
                                     Read more
                                 </Link>
-                                <Link to="/Blog" className="promo-btn">
+                                <Link
+                                    to="/Blog"
+                                    className="home-upper-section-btn"
+                                >
                                     My blog
                                 </Link>
                             </div>
                         </div>
                     </div>
-                </row>
-            </container>
+                </div>
+            </div>
         </section>
     )
 }
 
-export default PromoSection
+export default HomePromoSection
