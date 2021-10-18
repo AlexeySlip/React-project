@@ -7,7 +7,7 @@ const HomeArticlesArray = [
         title: 'Vestibulum dapibus mauris',
         text: 'Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis. Maecenas malesuada elit lectus felis, malesuada ultricies. Curabitur et ligula. Ut molestie a, ultricies porta urna. Vestibulum commodo volutpat dolor.',
         likes: 268,
-        place: 'Home',
+        home: 'true',
     },
     {
         id: '2',
@@ -17,7 +17,7 @@ const HomeArticlesArray = [
         title: 'Nulla ipsum dolor lacus',
         text: 'Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis. Maecenas malesuada elit lectus felis, malesuada ultricies. Curabitur et ligula. Ut molestie a, ultricies porta urna. Vestibulum commodo volutpat dolor.',
         likes: 193,
-        place: 'Home',
+        home: 'true',
     },
     {
         id: '3',
@@ -27,7 +27,7 @@ const HomeArticlesArray = [
         title: 'Cum sociis natoque penatibus et ultrices volutpat',
         text: 'Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis. Maecenas malesuada elit lectus felis, malesuada ultricies. Curabitur et ligula. Ut molestie a, ultricies porta urna. Vestibulum commodo volutpat dolor.',
         likes: 217,
-        place: 'Home',
+        home: 'true',
     },
     {
         id: '4',

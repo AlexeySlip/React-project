@@ -3,11 +3,11 @@
 
 body {
     background-color: #1f1e1b !important;
-    font-family: 'Yantramanav', Helvetica, Arial, sans-serif;
-    font-size: 17px;
-    line-height: 27px;
-    font-weight: 400;
-    letter-spacing: 0px;
+    font-family: 'Yantramanav', Helvetica, Arial, sans-serif !important;
+    font-size: 17px !important;
+    line-height: 27px !important;
+    font-weight: 400 !important;
+    letter-spacing: 0px !important;
 }
 .container {
     width: 100%;
@@ -145,6 +145,11 @@ header .container {
     .slick-image img {
         width: 60%;
     }
+    .blog-post-text {
+        font-size: 14px;
+        line-height: 23px;
+        letter-spacing: 0px;
+    }
 }
 /* laptop */
 @media (min-width: 992px) {
@@ -179,6 +184,10 @@ header .container {
         flex: 0 0 66.66667%;
         max-width: 66.66667%;
     }
+    .col-md-9 {
+        flex: 0 0 75%;
+        max-width: 75%;
+    }
     .col-md-10 {
         flex: 0 0 83.33333%;
         max-width: 83.33333%;
@@ -187,11 +196,27 @@ header .container {
         flex: 0 0 100%;
         max-width: 100%;
     }
+    .blog-post-text {
+        font-size: 17px;
+        line-height: 27px;
+        font-weight: 400;
+        letter-spacing: 0px;
+    }
+
+    .blog-post-footer {
+        margin-top: 30px;
+    }
 }
 /* desktop */
 @media (min-width: 1200px) {
     .container {
         max-width: 1140px;
+    }
+    .blog-post-title {
+        margin-top: 30px;
+    }
+    .blog-post-footer {
+        margin-top: 90px;
     }
 }
 /* only mobile */
@@ -214,7 +239,7 @@ header .container {
     }
     .nav-mobile-menu span {
         height: 1px;
-        background-color: white;
+        background-color: #a6c354;
         position: absolute;
         left: 0;
         right: 0;
@@ -326,10 +351,16 @@ header .container {
     .under-line p {
         text-align: center;
     }
+    .blog-post {
+        flex-direction: column;
+    }
+    .blog-post-text {
+        font-size: 13px;
+        line-height: 19px;
+        letter-spacing: 0px;
+    }
 }
 .home-upper-section {
-    position: relative;
-    z-index: 1;
     background: url('/images/home-upper-section.jpg') center center no-repeat;
     background-size: cover;
 }
@@ -584,4 +615,95 @@ h2 {
     border-top: 1px solid rgba(255, 255, 255, 0.1);
     padding: 12px 0;
     color: white;
+}
+.blog-upper-section,
+.gallery-upper-section {
+    padding-top: 480px;
+    padding-bottom: 100px;
+    display: flex;
+    align-items: flex-end;
+}
+.blog-upper-section {
+    background: url('/images/blog-upper-section.jpg') center center no-repeat;
+    background-size: cover;
+}
+.gallery-upper-section {
+    background: url('/images/gallery-upper-section.jpg') center center no-repeat;
+    background-size: cover;
+}
+.blog-upper-section .row,
+.gallery-upper-section .row {
+    flex-direction: column;
+}
+.blog-upper-section h3,
+.gallery-upper-section h3 {
+    font-size: 26px;
+    line-height: 36px;
+    font-weight: 400;
+    letter-spacing: 0px;
+    font-family: 'PT Serif', Helvetica, Arial, sans-serif;
+    color: white;
+}
+.gallery-photo {
+    overflow: hidden;
+    margin: 20px 0;
+}
+.gallery-photo img {
+    width: 100%;
+    transition: all 0.4s ease-in-out;
+    display: block;
+}
+.gallery-photo img:hover {
+    transform: scale(1.1);
+}
+.blog-post {
+    margin-bottom: 20px;
+    display: flex;
+}
+.blog-post-image {
+    overflow: hidden;
+}
+.blog-post-image img {
+    width: 100%;
+    transition: all 0.7s ease-in-out;
+    display: block;
+}
+.blog-post-image img:hover {
+    transform: scale(1.1);
+}
+.blog-post-text {
+    padding: 10px 5px 0;
+}
+.blog-post-head {
+    color: #a8a8a8;
+}
+.blog-post-head a {
+    text-decoration: none;
+    color: #a8a8a8;
+    border-bottom: 1px dotted;
+}
+.blog-post-title h2 {
+    font-size: 130%;
+    line-height: 140%;
+    margin: 10px 0 15px;
+}
+.blog-post-title a {
+    text-decoration: none;
+    color: white;
+}
+.blog-post-excerpt {
+    color: white;
+    margin-bottom: 15px;
+}
+.blog-post-footer {
+    display: flex;
+    justify-content: flex-end;
+}
+.blog-post-footer a {
+    text-decoration: none;
+    color: #a6c354;
+}
+.blog-post-footer a:hover {
+    text-decoration: underline;
+    color: #81a029;
 }

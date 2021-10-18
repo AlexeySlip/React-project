@@ -1,15 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-const HomeArticlesItem = ({
-    id,
-    image,
-    category,
-    date,
-    title,
-    text,
-    likes,
-}) => {
+const HomeArticlesItem = ({ image, category, date, title, text, likes }) => {
     return (
         <>
             <div className="home-post-image">

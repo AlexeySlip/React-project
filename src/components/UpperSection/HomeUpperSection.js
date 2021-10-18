@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-const HomePromoSection = () => {
+const HomeUpperSection = () => {
     return (
         <section className="home-upper-section">
             <div className="container">
@@ -38,4 +38,4 @@ const HomePromoSection = () => {
     )
 }
 
-export default HomePromoSection
+export default HomeUpperSection

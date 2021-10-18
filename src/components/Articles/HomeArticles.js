@@ -5,7 +5,7 @@ import HomeArticlesItem from './HomeArticlesItem'
 const HomeArticles = () => {
     return (
         <>
-            {ArticlesArray.filter((item) => item.place === 'Home').map(
+            {ArticlesArray.filter((item) => item.home === 'true').map(
                 ({ id, image, category, date, title, text, likes }) => (
                     <div className="col-xs-12 col-md-4 col-sm-4" key={id}>
                         <div className="home-post">
