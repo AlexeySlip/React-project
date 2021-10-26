@@ -1,14 +1,16 @@
 import React from 'react'
-import HomeArticlesArray from '../ArticlesArray'
+import { useParams } from 'react-router'
+import ArticlesArray from '../ArticlesArray'
 import BlogArticlesItem from '../BlogArticlesItem'
 
-const WinterArticles = () => {
+const CategoryArticles = () => {
+    let { category } = useParams()
     return (
         <>
             <div className="container">
                 <div className="row">
-                    {HomeArticlesArray.filter(
-                        (item) => item.category === 'Winter'
+                    {ArticlesArray.filter(
+                        (item) => item.category === category
                     ).map(
                         ({ id, image, category, date, title, text, likes }) => (
                             <div
@@ -35,4 +37,4 @@ const WinterArticles = () => {
     )
 }
 
-export default WinterArticles
+export default CategoryArticles

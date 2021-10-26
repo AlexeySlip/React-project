@@ -1,9 +1,8 @@
 import React from 'react'
 import { Route, Switch } from 'react-router'
+import AboutMe from '../../pages/AboutMe/AboutMe'
 import Blog from '../../pages/Blog/Blog'
-import Temperate from '../../pages/Category/Temperate/Temperate'
-import Tropical from '../../pages/Category/Tropical/Tropical'
-import Winter from '../../pages/Category/Winter/Winter'
+import Category from '../../pages/Category/Category'
 import Gallery from '../../pages/Gallery/Gallery'
 import Home from '../../pages/Home/Home'
 
@@ -14,21 +13,20 @@ const Main = () => {
                 <Route path="/" exact>
                     <Home />
                 </Route>
+                <Route path="/AboutMe" exact>
+                    <AboutMe />
+                </Route>
                 <Route path="/Blog" exact>
                     <Blog />
                 </Route>
                 <Route path="/Gallery" exact>
                     <Gallery />
                 </Route>
-                <Route path="/Winter" exact>
-                    <Winter />
-                </Route>
-                <Route path="/Tropical" exact>
-                    <Tropical />
-                </Route>
-                <Route path="/Temperate" exact>
-                    <Temperate />
-                </Route>
+                <Route
+                    path="/Blog/:category"
+                    children={<Category />}
+                    exact
+                ></Route>
             </Switch>
         </>
     )

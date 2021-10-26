@@ -1,6 +1,6 @@
 import React from 'react'
 import Alps from '../../components/Alps/Alps'
-import LastNews from '../../components/LastNews/LastNews'
+import HomeLastNews from '../../components/LastNews/HomeLastNews'
 import PhotoGallery from '../../components/PhotoGallery/PhotoGallery'
 import HomeUpperSection from '../../components/UpperSection/HomeUpperSection'
 import ReactSlick from '../../components/ReactSlick/ReactSlick'
@@ -11,7 +11,7 @@ const Home = () => {
         <>
             <HomeUpperSection />
             <Alps />
-            <LastNews />
+            <HomeLastNews />
             <WhatYouNeed />
             <ReactSlick />
             <PhotoGallery />

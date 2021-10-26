@@ -1,16 +1,16 @@
 import React from 'react'
-import HomeArticles from '../Articles/HomeArticles'
+import AboutMeArticles from '../Articles/AboutMeArticles'
 
-const LastNews = () => {
+const HomeLastNews = () => {
     return (
         <>
-            <section className="last-news">
+            <section className="about-me-last-news">
                 <div className="container">
                     <div className="row">
                         <div className="col-xs-12 col-md-12 col-sm-12">
                             <h2>Last news</h2>
                         </div>
-                        <HomeArticles />
+                        <AboutMeArticles />
                     </div>
                 </div>
             </section>
@@ -18,4 +18,4 @@ const LastNews = () => {
     )
 }
 
-export default LastNews
+export default HomeLastNews

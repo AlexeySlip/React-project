@@ -16,7 +16,7 @@ const BlogArticlesItem = ({ image, category, date, title, text, likes }) => {
                     <div className="blog-post-head">
                         <i></i>
                         <span className="green-text">Category: </span>
-                        <Link to={category}>{category}</Link>
+                        <Link to={`/Blog/${category}`}>{category}</Link>
                         <span> at</span>
                         <i></i>
                         <span> {date}</span>

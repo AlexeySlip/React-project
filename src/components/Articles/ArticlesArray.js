@@ -8,6 +8,7 @@ const HomeArticlesArray = [
         text: 'Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis. Maecenas malesuada elit lectus felis, malesuada ultricies. Curabitur et ligula. Ut molestie a, ultricies porta urna. Vestibulum commodo volutpat dolor.',
         likes: 268,
         home: 'true',
+        aboutMe: 'true',
     },
     {
         id: '2',
@@ -18,6 +19,7 @@ const HomeArticlesArray = [
         text: 'Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis. Maecenas malesuada elit lectus felis, malesuada ultricies. Curabitur et ligula. Ut molestie a, ultricies porta urna. Vestibulum commodo volutpat dolor.',
         likes: 193,
         home: 'true',
+        aboutMe: 'true',
     },
     {
         id: '3',

@@ -42,7 +42,6 @@ const Menu = () => {
                         </li>
                     </ul>
                 </div>
-                <ul className="social"></ul>
             </div>
             <div
                 // className="nav-mobile-menu "

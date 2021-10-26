@@ -150,6 +150,29 @@ header .container {
         line-height: 23px;
         letter-spacing: 0px;
     }
+    .about-me-upper-section-text h1 {
+        font-size: 55px;
+        line-height: 60px;
+    }
+    .about-me-upper-section-text h3 {
+        font-size: 26px;
+        line-height: 36px;
+    }
+    [class*='about-me-argument-'] {
+        width: 48%;
+        margin: 0 1% 40px;
+    }
+    [class*='about-me-argument-'] h3 {
+        font-size: 42px;
+        line-height: 42px;
+    }
+    [class*='about-me-argument-'] h4 {
+        font-size: 18px;
+        line-height: 25px;
+    }
+    .about-me-post-image {
+        height: 250px;
+    }
 }
 /* laptop */
 @media (min-width: 992px) {
@@ -206,6 +229,9 @@ header .container {
     .blog-post-footer {
         margin-top: 30px;
     }
+    .about-me-post-image {
+        height: 330px;
+    }
 }
 /* desktop */
 @media (min-width: 1200px) {
@@ -217,6 +243,9 @@ header .container {
     }
     .blog-post-footer {
         margin-top: 90px;
+    }
+    .about-me-post-image {
+        height: 430px;
     }
 }
 /* only mobile */
@@ -359,6 +388,34 @@ header .container {
         line-height: 19px;
         letter-spacing: 0px;
     }
+    .about-me-upper-section-text,
+    .about-me-upper-section-arguments,
+    .about-me-upper-section img {
+        padding: 10px;
+    }
+    .about-me-upper-section-text h1 {
+        font-size: 33px;
+        line-height: 36px;
+    }
+    .about-me-upper-section-text h3 {
+        font-size: 16px;
+        line-height: 22px;
+    }
+    [class*='about-me-argument-'] {
+        width: 100%;
+        margin: 0 0 20px;
+    }
+    [class*='about-me-argument-'] h3 {
+        font-size: 40px;
+        line-height: 40px;
+    }
+    [class*='about-me-argument-'] h4 {
+        font-size: 13px;
+        line-height: 19px;
+    }
+    .about-me-post-image {
+        height: 250px;
+    }
 }
 .home-upper-section {
     background: url('/images/home-upper-section.jpg') center center no-repeat;
@@ -448,19 +505,20 @@ h2 {
     color: white;
     font-family: 'PT Serif', Helvetica, Arial, sans-serif;
 }
-.last-news {
+.home-last-news {
     margin-bottom: 40px;
 }
-.home-post {
+.home-post,
+.about-me-post {
     margin-bottom: 20px;
 }
 .home-post-text {
     padding: 10px 5px 0;
 }
-.home-post-head {
+.post-head {
     color: #a8a8a8;
 }
-.home-post-head a {
+.post-head a {
     text-decoration: none;
     color: #a8a8a8;
     border-bottom: 1px dotted;
@@ -706,4 +764,100 @@ h2 {
 .blog-post-footer a:hover {
     text-decoration: underline;
     color: #81a029;
+}
+.about-me-upper-section {
+    padding-top: 260px;
+    background-image: url(./images/home_behind_sectionbg4.jpg);
+    background-repeat: no-repeat;
+    background-position: center top;
+    font-family: 'PT Serif', Helvetica, Arial, sans-serif;
+}
+.about-me-upper-section img {
+    width: 100%;
+}
+.about-me-upper-section-text {
+    color: white;
+}
+.about-me-upper-section-text h1 {
+    font-weight: 700;
+    letter-spacing: 0px;
+}
+.about-me-upper-section-text h3 {
+    font-weight: 400;
+    letter-spacing: 0px;
+}
+.about-me-upper-section-arguments {
+    display: flex;
+    flex-wrap: wrap;
+}
+[class*='about-me-argument-'] {
+    background-repeat: no-repeat;
+    background-position: left top;
+    padding: 5px 0 0 120px;
+}
+[class*='about-me-argument-'] h3 {
+    font-weight: 400;
+    letter-spacing: 0px;
+    margin: 0 0 15px;
+}
+[class*='about-me-argument-'] h4 {
+    font-weight: 700;
+    letter-spacing: 0px;
+    color: white;
+    margin: 0 0 15px;
+}
+.about-me-argument-1 {
+    background-image: url(./images/home_behind_pic2.png);
+}
+.about-me-argument-2 {
+    background-image: url(./images/home_behind_pic3.png);
+}
+.about-me-argument-3 {
+    background-image: url(./images/home_behind_pic4.png);
+}
+.about-me-argument-4 {
+    background-image: url(./images/home_behind_pic5.png);
+}
+.about-me-last-news .col-md-6,
+.about-me-last-news .col-sm-6 {
+    padding: 0;
+}
+.about-me-post {
+    margin-bottom: 10px;
+}
+.about-me-post-image {
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.about-me-post-title h2 {
+    font-size: 130%;
+    line-height: 140%;
+    margin: 0;
+    padding-left: 20px;
+}
+.about-me-post .post-head {
+    padding-left: 20px;
+}
+.about-me-post-title a {
+    text-decoration: none;
+}
+.about-me-post-line {
+    content: '';
+    display: block;
+    height: 3px;
+    margin-top: 20px;
+    width: 0;
+    transition: all 0.4s ease-out;
+    margin-left: 20px;
+}
+.about-me-post-image:hover .about-me-post-line {
+    background: #a6c354;
+    width: 40%;
+    margin-bottom: 20px;
+}
+.about-me-post-image:hover.about-me-post-title h2 {
+    margin-bottom: 20px !important;
 }
