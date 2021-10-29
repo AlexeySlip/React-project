@@ -3,6 +3,8 @@ import { useParams } from 'react-router'
 import { Link } from 'react-router-dom'
 import ArticlesArray from '../../components/Articles/ArticlesArray'
 import RelatedPosts from '../../components/RelatedPosts/RelatedPosts'
+import { FavoriteBorder, Favorite } from '@mui/icons-material'
+import { connect } from 'react-redux'
 
 const SingleArticle = () => {
     let { url } = useParams()
@@ -10,11 +12,21 @@ const SingleArticle = () => {
         <>
             <div className="single-article">
                 {ArticlesArray.filter((item) => item.url === url).map(
-                    ({ image, title, author, date, category }) => (
+                    ({
+                        id,
+                        image,
+                        title,
+                        author,
+                        date,
+                        category,
+                        likes,
+                        isLiked = false,
+                    }) => (
                         <>
                             <section
                                 className="single-article-upper-section"
                                 style={{ backgroundImage: `url(${image})` }}
+                                key={id}
                             >
                                 <div className="container">
                                     <div className="row">
@@ -138,10 +150,25 @@ const SingleArticle = () => {
                                                 </p>
                                             </div>
                                         </div>
+                                        <div className="col-xs-12 col-md-12 col-sm-12">
+                                            <div className="single-article-content-footer">
+                                                <div className="share-block">
+                                                    <span>Share</span>
+                                                </div>
+                                                <div className="post-like">
+                                                    {isLiked ? (
+                                                        <Favorite />
+                                                    ) : (
+                                                        <FavoriteBorder />
+                                                    )}
+                                                    <p>{likes}</p>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </section>
-                            <RelatedPosts />
+                            <RelatedPosts id={id} />
                         </>
                     )
                 )}
@@ -149,4 +176,7 @@ const SingleArticle = () => {
         </>
     )
 }
-export default SingleArticle
+
+const mapStateToProps = (state, { id }) => ({ isLiked: state[id] })
+
+export default connect(mapStateToProps)(SingleArticle)

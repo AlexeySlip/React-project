@@ -1,6 +1,6 @@
 const ArticlesArray = [
     {
-        id: '1',
+        id: 1,
         image: '/images/articles/home_behind_blog1-960x720.jpg',
         category: 'Temperate',
         date: 'December 20, 2020',
@@ -13,7 +13,7 @@ const ArticlesArray = [
         author: 'Olivia Johnson',
     },
     {
-        id: '2',
+        id: 2,
         image: '/images/articles/home_behind_blog2-960x720.jpg',
         category: 'Tropical',
         date: 'April 14, 2021',
@@ -27,7 +27,7 @@ const ArticlesArray = [
         author: 'Jack Davies',
     },
     {
-        id: '3',
+        id: 3,
         image: '/images/articles/home_behind_blog3-960x720.jpg',
         category: 'Winter',
         date: 'July 27, 2021',
@@ -40,7 +40,7 @@ const ArticlesArray = [
         author: 'Emily Evans',
     },
     {
-        id: '4',
+        id: 4,
         image: '/images/articles/home_behind_blog4-960x720.jpg',
         category: 'Tropical',
         date: 'November 8, 2021',
@@ -52,7 +52,7 @@ const ArticlesArray = [
         author: 'Harry Parson',
     },
     {
-        id: '5',
+        id: 5,
         image: '/images/articles/home_behind_blog5-960x720.jpg',
         category: 'Temperate',
         date: 'September 13, 2021',

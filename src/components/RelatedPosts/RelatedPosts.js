@@ -2,7 +2,7 @@ import React from 'react'
 import ArticlesArray from '../Articles/ArticlesArray'
 import RelatedPostsItem from './RelatedPostsItem'
 
-const RelatedPosts = () => {
+const RelatedPosts = ({ id }) => {
     return (
         <>
             <section className="related-posts-section">

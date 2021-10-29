@@ -1,7 +1,10 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import { FavoriteBorder, Favorite } from '@mui/icons-material'
+import { connect } from 'react-redux'
 
 const BlogArticlesItem = ({
+    id,
     image,
     category,
     date,
@@ -9,6 +12,7 @@ const BlogArticlesItem = ({
     text,
     url,
     likes,
+    isLiked = false,
 }) => {
     return (
         <>
@@ -36,6 +40,10 @@ const BlogArticlesItem = ({
                     </div>
                     <div className="blog-post-excerpt">{text}</div>
                     <div className="blog-post-footer">
+                        <div className="post-like">
+                            {isLiked ? <Favorite /> : <FavoriteBorder />}
+                            <p>{likes}</p>
+                        </div>
                         <Link to={`/SingleArticle/${url}`}>Read more</Link>
                     </div>
                 </div>
@@ -44,4 +52,6 @@ const BlogArticlesItem = ({
     )
 }
 
-export default BlogArticlesItem
+const mapStateToProps = (state, { id }) => ({ isLiked: state[id] })
+
+export default connect(mapStateToProps)(BlogArticlesItem)

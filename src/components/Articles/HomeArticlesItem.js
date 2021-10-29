@@ -1,5 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import { FavoriteBorder, Favorite } from '@mui/icons-material'
+import { connect } from 'react-redux'
 
 const HomeArticlesItem = ({
     id,
@@ -10,6 +12,7 @@ const HomeArticlesItem = ({
     text,
     url,
     likes,
+    isLiked = false,
 }) => {
     return (
         <>
@@ -34,6 +37,10 @@ const HomeArticlesItem = ({
                 </div>
                 <div className="home-post-excerpt">{text}</div>
                 <div className="home-post-footer">
+                    <div className="post-like">
+                        {isLiked ? <Favorite /> : <FavoriteBorder />}
+                        <p>{likes}</p>
+                    </div>
                     <Link to={`/SingleArticle/${url}`}>Read more</Link>
                 </div>
             </div>
@@ -41,4 +48,6 @@ const HomeArticlesItem = ({
     )
 }
 
-export default HomeArticlesItem
+const mapStateToProps = (state, { id }) => ({ isLiked: state[id] })
+
+export default connect(mapStateToProps)(HomeArticlesItem)

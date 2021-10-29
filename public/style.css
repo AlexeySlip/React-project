@@ -594,13 +594,35 @@ h2 {
     color: white;
     margin-bottom: 15px;
 }
-.home-post-footer {
+.home-post-footer,
+.blog-post-footer,
+.single-article-content-footer {
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
 }
-.home-post-footer a {
+.home-post-footer a,
+.blog-post-footer a {
     text-decoration: none;
     color: #a6c354;
+}
+.blog-post-footer a:hover {
+    text-decoration: underline;
+    color: #81a029;
+}
+.post-like {
+    display: flex;
+    align-items: center;
+}
+.post-like svg {
+    color: #81a029;
+    width: 20px;
+    height: 20px;
+}
+.post-like p {
+    margin: 0;
+    padding-left: 2px;
+    padding-top: 1px;
+    color: #a8a8a8;
 }
 .home-post-footer a:hover {
     text-decoration: underline;
@@ -811,18 +833,7 @@ h2 {
     color: white;
     margin-bottom: 15px;
 }
-.blog-post-footer {
-    display: flex;
-    justify-content: flex-end;
-}
-.blog-post-footer a {
-    text-decoration: none;
-    color: #a6c354;
-}
-.blog-post-footer a:hover {
-    text-decoration: underline;
-    color: #81a029;
-}
+
 .about-me-upper-section {
     padding-top: 260px;
     background-image: url(./images/home_behind_sectionbg4.jpg);
@@ -947,16 +958,19 @@ h2 {
 .travelers-guides-text p,
 .travelers-guides-text h2,
 .travelers-guides-btn a,
-.post-btn a {
+.post-btn a,
+.alps-btn a {
     color: white;
     margin: 0 0 15px;
 }
 .travelers-guides-btn,
-.post-btn {
+.post-btn,
+.alps-btn {
     margin: 15px 0;
 }
 .travelers-guides-btn a,
-.post-btn a {
+.post-btn a,
+.alps-btn a {
     background-color: #2d2c28;
     padding: 10px 25px;
     font-size: inherit;
@@ -1069,4 +1083,10 @@ h2 {
     line-height: 18px;
     padding: 2px 5px;
     margin: 0;
+}
+.alps-btn {
+    margin-top: 30px;
+}
+.share-block span {
+    color: white;
 }

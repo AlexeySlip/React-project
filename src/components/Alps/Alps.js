@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const Alps = () => {
     return (
@@ -29,6 +30,9 @@ const Alps = () => {
                                     Vestibulum id, eleifend justo vel bibendum
                                     sapien massa
                                 </p>
+                                <div className="alps-btn">
+                                    <Link to="/AboutMe">Book tour</Link>
+                                </div>
                             </div>
                         </div>
                     </div>
