@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-const AboutMeArticlesItem = ({ id, image, category, date, title }) => {
+const AboutMeArticlesItem = ({ image, category, date, url, title }) => {
     return (
         <>
             <div className="about-me-post">
@@ -18,11 +18,12 @@ const AboutMeArticlesItem = ({ id, image, category, date, title }) => {
                         <span> {date}</span>
                     </div>
                     <div className="about-me-post-title">
-                        <Link to={`/${category}/${id}`}>
+                        <Link to={`/SingleArticle/${url}`}>
                             <h2>{title}</h2>
                         </Link>
                     </div>
                     <div className="about-me-post-line" />
+                    <div className="about-me-post-dark" />
                 </div>
             </div>
         </>

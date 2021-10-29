@@ -11,6 +11,7 @@ const GalleryUpperSection = () => {
                             <h3>
                                 sapien massa quisque lorem
                                 <span className="green-text">
+                                    {' '}
                                     turpis faucibus{' '}
                                 </span>
                                 , vestibulum id, eleifend justo vel bibendum ac

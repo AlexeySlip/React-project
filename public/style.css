@@ -117,6 +117,10 @@ header .container {
         flex: 0 0 75%;
         max-width: 75%;
     }
+    .col-sm-10 {
+        flex: 0 0 83.33333%;
+        max-width: 83.33333%;
+    }
     .col-sm-12 {
         flex: 0 0 100%;
         max-width: 100%;
@@ -172,6 +176,20 @@ header .container {
     }
     .about-me-post-image {
         height: 250px;
+    }
+    .about-me-last-news .col-md-6,
+    .about-me-last-news .col-sm-6 {
+        padding: 0;
+    }
+    .travelers-guides-text p {
+        font-size: 14px;
+        line-height: 23px;
+        letter-spacing: 0px;
+    }
+    .travelers-guides-text h2 {
+        font-size: 41px;
+        line-height: 49px;
+        letter-spacing: 0px;
     }
 }
 /* laptop */
@@ -232,6 +250,17 @@ header .container {
     .about-me-post-image {
         height: 330px;
     }
+    .travelers-guides-text p {
+        font-size: 17px;
+        line-height: 27px;
+        letter-spacing: 0px;
+    }
+    .travelers-guides-text h2 {
+        font-size: 48px;
+        line-height: 58px;
+        font-weight: 700;
+        letter-spacing: 0px;
+    }
 }
 /* desktop */
 @media (min-width: 1200px) {
@@ -246,6 +275,17 @@ header .container {
     }
     .about-me-post-image {
         height: 430px;
+    }
+    .travelers-guides-text p {
+        font-size: 17px;
+        line-height: 27px;
+        letter-spacing: 0px;
+    }
+    .travelers-guides-text h2 {
+        font-size: 48px;
+        line-height: 58px;
+        font-weight: 700;
+        letter-spacing: 0px;
     }
 }
 /* only mobile */
@@ -416,6 +456,22 @@ header .container {
     .about-me-post-image {
         height: 250px;
     }
+    .about-me-post {
+        margin-bottom: 40px !important;
+    }
+    .travelers-guides-image img {
+        margin-top: 20px;
+    }
+    .travelers-guides-text p {
+        font-size: 13px;
+        line-height: 19px;
+        letter-spacing: 0px;
+    }
+    .travelers-guides-text h2 {
+        font-size: 29px;
+        line-height: 35px;
+        letter-spacing: 0px;
+    }
 }
 .home-upper-section {
     background: url('/images/home-upper-section.jpg') center center no-repeat;
@@ -462,18 +518,20 @@ header .container {
     margin-bottom: 15px;
 }
 .home-post-image,
-.alps-image {
+.related-post-image {
     display: inline-block;
     overflow: hidden;
 }
 .alps-image img,
-.home-post-image img {
+.home-post-image img,
+.related-posts img {
     width: 100%;
     transition: all 0.7s ease-in-out;
     display: block;
 }
-.alps-image img:hover,
-.home-post-image img:hover {
+
+.home-post-image img:hover,
+.related-posts img:hover {
     transform: scale(1.1);
 }
 .alps h3 {
@@ -623,7 +681,7 @@ h2 {
     color: white;
 }
 .green-text {
-    color: #a6c354;
+    color: #a6c354 !important;
 }
 .photo-gallery-btns {
     margin: 50px 0;
@@ -818,19 +876,13 @@ h2 {
 .about-me-argument-4 {
     background-image: url(./images/home_behind_pic5.png);
 }
-.about-me-last-news .col-md-6,
-.about-me-last-news .col-sm-6 {
-    padding: 0;
-}
-.about-me-post {
-    margin-bottom: 10px;
-}
 .about-me-post-image {
     background-repeat: no-repeat;
     background-position: center;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+    position: relative;
 }
 .about-me-post-title h2 {
     font-size: 130%;
@@ -840,6 +892,10 @@ h2 {
 }
 .about-me-post .post-head {
     padding-left: 20px;
+    z-index: 10;
+}
+.about-me-post-title {
+    z-index: 10;
 }
 .about-me-post-title a {
     text-decoration: none;
@@ -852,6 +908,7 @@ h2 {
     width: 0;
     transition: all 0.4s ease-out;
     margin-left: 20px;
+    z-index: 10;
 }
 .about-me-post-image:hover .about-me-post-line {
     background: #a6c354;
@@ -860,4 +917,156 @@ h2 {
 }
 .about-me-post-image:hover.about-me-post-title h2 {
     margin-bottom: 20px !important;
+}
+.about-me-post-image:hover .about-me-post-dark {
+    background: rgba(0, 0, 0, 0.35);
+}
+.about-me-post-dark {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.2);
+    transition: all 0.4s ease-out;
+}
+.about-me-travelers-guides {
+    margin-top: 60px;
+}
+.about-me-post-image a,
+.about-me-post-image span {
+    color: white;
+}
+.travelers-guides-image img {
+    width: 100%;
+}
+.travelers-guides-text {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+}
+.travelers-guides-text p,
+.travelers-guides-text h2,
+.travelers-guides-btn a,
+.post-btn a {
+    color: white;
+    margin: 0 0 15px;
+}
+.travelers-guides-btn,
+.post-btn {
+    margin: 15px 0;
+}
+.travelers-guides-btn a,
+.post-btn a {
+    background-color: #2d2c28;
+    padding: 10px 25px;
+    font-size: inherit;
+    overflow: hidden;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.1s ease-in-out;
+}
+.single-article-upper-section {
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 600px;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+}
+.single-article-upper-content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+.single-article-upper-section h1 {
+    font-size: 70px;
+    line-height: 70px;
+    font-weight: 400;
+    letter-spacing: 0px;
+    margin: 20px;
+    font-family: 'PT Serif', Helvetica, Arial, sans-serif;
+    color: white;
+    text-align: center;
+}
+.single-article-upper-information {
+    display: flex;
+    justify-content: center;
+}
+.single-article-upper-information a {
+    text-decoration: none;
+}
+.single-article-upper-information a:hover {
+    text-decoration: underline;
+}
+.single-article-upper-information a,
+.single-article-upper-information p {
+    font-family: 'Yantramanav', Helvetica, Arial, sans-serif;
+    font-size: 17px;
+    line-height: 27px;
+    font-weight: 400;
+    letter-spacing: 0px;
+    color: white;
+    margin: 0 5px;
+}
+.single-article-content-entry,
+.single-article-text {
+    display: flex;
+    justify-content: center;
+    margin: 50px 0;
+}
+.single-article-content-entry h3 {
+    text-align: center;
+    font-size: 26px;
+    line-height: 36px;
+    font-weight: 400;
+    letter-spacing: 0px;
+    color: white;
+    font-family: 'PT Serif', Helvetica, Arial, sans-serif;
+}
+.single-article-content,
+.related-posts {
+    display: flex;
+    flex-wrap: wrap;
+}
+.single-article-content img {
+    width: 100%;
+}
+.single-article-text {
+    color: white;
+}
+.single-article-text a {
+    text-decoration: none;
+}
+.single-article-text a:hover {
+    text-decoration: underline;
+    color: #81a029 !important;
+}
+.single-article-quotes {
+    margin: 25px;
+    font-family: 'PT Serif', Helvetica, Arial, sans-serif;
+    color: #e0e0e0;
+    line-height: 31px;
+}
+.related-posts-section h4 {
+    color: #ffffff;
+    font-size: 18px;
+    line-height: 25px;
+    font-weight: 700;
+    letter-spacing: 0px;
+    font-family: 'PT Serif', Helvetica, Arial, sans-serif;
+}
+.related-post h4 {
+    margin: 10px 0 25px;
+}
+.related-post a {
+    text-decoration: none;
+}
+.related-post p {
+    color: #a8a8a8;
+    font-size: 12px;
+    line-height: 18px;
+    padding: 2px 5px;
+    margin: 0;
 }

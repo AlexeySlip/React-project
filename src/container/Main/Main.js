@@ -5,6 +5,7 @@ import Blog from '../../pages/Blog/Blog'
 import Category from '../../pages/Category/Category'
 import Gallery from '../../pages/Gallery/Gallery'
 import Home from '../../pages/Home/Home'
+import SingleArticle from '../../pages/SingleArticle/SingleArticle'
 
 const Main = () => {
     return (
@@ -25,6 +26,11 @@ const Main = () => {
                 <Route
                     path="/Blog/:category"
                     children={<Category />}
+                    exact
+                ></Route>
+                <Route
+                    path="/SingleArticle/:url"
+                    children={<SingleArticle />}
                     exact
                 ></Route>
             </Switch>

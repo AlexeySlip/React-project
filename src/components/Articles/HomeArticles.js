@@ -6,7 +6,7 @@ const HomeArticles = () => {
     return (
         <>
             {ArticlesArray.filter((item) => item.home === 'true').map(
-                ({ id, image, category, date, title, text, likes }) => (
+                ({ id, image, category, date, title, text, url, likes }) => (
                     <div className="col-xs-12 col-md-4 col-sm-4" key={id}>
                         <div className="home-post">
                             <HomeArticlesItem
@@ -16,6 +16,7 @@ const HomeArticles = () => {
                                 date={date}
                                 title={title}
                                 text={text}
+                                url={url}
                                 likes={likes}
                             />
                         </div>

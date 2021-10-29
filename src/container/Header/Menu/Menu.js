@@ -35,7 +35,9 @@ const Menu = () => {
                             <Link to="/Blog">Blog</Link>
                         </li>
                         <li>
-                            <Link to="/SingleArticle">Single article</Link>
+                            <Link to="/SingleArticle/Aliquam-sem">
+                                Single article
+                            </Link>
                         </li>
                         <li>
                             <Link to="/Gallery">Gallery</Link>

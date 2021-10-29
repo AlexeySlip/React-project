@@ -1,12 +1,20 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-const BlogArticlesItem = ({ image, category, date, title, text, likes }) => {
+const BlogArticlesItem = ({
+    image,
+    category,
+    date,
+    title,
+    text,
+    url,
+    likes,
+}) => {
     return (
         <>
             <div className="col-xs-12 col-md-5 col-sm-6">
                 <div className="blog-post-image ">
-                    <Link>
+                    <Link to={`/SingleArticle/${url}`}>
                         <img src={image} alt="" />
                     </Link>
                 </div>
@@ -23,12 +31,12 @@ const BlogArticlesItem = ({ image, category, date, title, text, likes }) => {
                     </div>
                     <div className="blog-post-title">
                         <h2>
-                            <Link>{title}</Link>
+                            <Link to={`/SingleArticle/${url}`}>{title}</Link>
                         </h2>
                     </div>
                     <div className="blog-post-excerpt">{text}</div>
                     <div className="blog-post-footer">
-                        <Link>Read more</Link>
+                        <Link to={`/SingleArticle/${url}`}>Read more</Link>
                     </div>
                 </div>
             </div>

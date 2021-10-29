@@ -6,14 +6,14 @@ const AboutMeArticles = () => {
     return (
         <>
             {ArticlesArray.filter((item) => item.aboutMe === 'true').map(
-                ({ id, image, category, date, title, text, likes }) => (
+                ({ id, image, category, date, title, url, likes }) => (
                     <div className="col-xs-12 col-md-6 col-sm-6" key={id}>
                         <AboutMeArticlesItem
-                            id={id}
                             image={image}
                             category={category}
                             date={date}
                             title={title}
+                            url={url}
                         />
                     </div>
                 )

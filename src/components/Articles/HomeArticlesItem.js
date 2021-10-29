@@ -8,12 +8,13 @@ const HomeArticlesItem = ({
     date,
     title,
     text,
+    url,
     likes,
 }) => {
     return (
         <>
             <div className="home-post-image">
-                <Link to={`/${category}/${id}`}>
+                <Link to={`/SingleArticle/${url}`}>
                     <img src={image} alt="" />
                 </Link>
             </div>
@@ -28,12 +29,12 @@ const HomeArticlesItem = ({
                 </div>
                 <div className="home-post-title">
                     <h2>
-                        <Link to={`/${category}/${id}`}>{title}</Link>
+                        <Link to={`/SingleArticle/${url}`}>{title}</Link>
                     </h2>
                 </div>
                 <div className="home-post-excerpt">{text}</div>
                 <div className="home-post-footer">
-                    <Link to={`/${category}/${id}`}>Read more</Link>
+                    <Link to={`/SingleArticle/${url}`}>Read more</Link>
                 </div>
             </div>
         </>

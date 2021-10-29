@@ -1,7 +1,7 @@
-const HomeArticlesArray = [
+const ArticlesArray = [
     {
         id: '1',
-        image: '/images/home_behind_blog1-960x720.jpg',
+        image: '/images/articles/home_behind_blog1-960x720.jpg',
         category: 'Temperate',
         date: 'December 20, 2020',
         title: 'Vestibulum dapibus mauris',
@@ -9,10 +9,12 @@ const HomeArticlesArray = [
         likes: 268,
         home: 'true',
         aboutMe: 'true',
+        url: 'Vestibulum-dapibus-mauris',
+        author: 'Olivia Johnson',
     },
     {
         id: '2',
-        image: '/images/home_behind_blog2-960x720.jpg',
+        image: '/images/articles/home_behind_blog2-960x720.jpg',
         category: 'Tropical',
         date: 'April 14, 2021',
         title: 'Nulla ipsum dolor lacus',
@@ -20,35 +22,47 @@ const HomeArticlesArray = [
         likes: 193,
         home: 'true',
         aboutMe: 'true',
+        singleArticle: 'true',
+        url: 'Nulla-ipsum-dolor-lacus',
+        author: 'Jack Davies',
     },
     {
         id: '3',
-        image: '/images/home_behind_blog3-960x720.jpg',
+        image: '/images/articles/home_behind_blog3-960x720.jpg',
         category: 'Winter',
         date: 'July 27, 2021',
         title: 'Cum sociis natoque penatibus et ultrices volutpat',
         text: 'Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis. Maecenas malesuada elit lectus felis, malesuada ultricies. Curabitur et ligula. Ut molestie a, ultricies porta urna. Vestibulum commodo volutpat dolor.',
         likes: 217,
         home: 'true',
+
+        url: 'Cum-sociis-natoque-penatibus-et-ultrices-volutpat',
+        author: 'Emily Evans',
     },
     {
         id: '4',
-        image: '/images/home_behind_blog4-960x720.jpg',
+        image: '/images/articles/home_behind_blog4-960x720.jpg',
         category: 'Tropical',
         date: 'November 8, 2021',
         title: 'Quisque cursus et',
         text: 'Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis. Maecenas malesuada elit lectus felis, malesuada ultricies. Curabitur et ligula. Ut molestie a, ultricies porta urna. Vestibulum commodo volutpat dolor.',
         likes: 156,
+        singleArticle: 'true',
+        url: 'Quisque-cursus-et',
+        author: 'Harry Parson',
     },
     {
         id: '5',
-        image: '/images/home_behind_blog5-960x720.jpg',
+        image: '/images/articles/home_behind_blog5-960x720.jpg',
         category: 'Temperate',
         date: 'September 13, 2021',
         title: 'Aliquam sem',
         text: 'Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis. Maecenas malesuada elit lectus felis, malesuada ultricies. Curabitur et ligula. Ut molestie a, ultricies porta urna. Vestibulum commodo volutpat dolor.',
         likes: 207,
+        singleArticle: 'true',
+        url: 'Aliquam-sem',
+        author: 'William Flatcher',
     },
 ]
 
-export default HomeArticlesArray
+export default ArticlesArray

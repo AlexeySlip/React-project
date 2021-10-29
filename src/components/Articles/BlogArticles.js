@@ -8,7 +8,16 @@ const BlogArticles = () => {
             <div className="container">
                 <div className="row">
                     {ArticlesArray.map(
-                        ({ id, image, category, date, title, text, likes }) => (
+                        ({
+                            id,
+                            image,
+                            category,
+                            date,
+                            title,
+                            text,
+                            url,
+                            likes,
+                        }) => (
                             <div
                                 className="col-xs-12 col-md-12 col-sm-12"
                                 key={id}
@@ -21,6 +30,7 @@ const BlogArticles = () => {
                                         date={date}
                                         title={title}
                                         text={text}
+                                        url={url}
                                         likes={likes}
                                     />
                                 </div>
