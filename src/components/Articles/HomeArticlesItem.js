@@ -13,6 +13,8 @@ const HomeArticlesItem = ({
     url,
     likes,
     isLiked = false,
+    removeLike,
+    addLike,
 }) => {
     return (
         <>
@@ -38,7 +40,15 @@ const HomeArticlesItem = ({
                 <div className="home-post-excerpt">{text}</div>
                 <div className="home-post-footer">
                     <div className="post-like">
-                        {isLiked ? <Favorite /> : <FavoriteBorder />}
+                        <div
+                            className="like"
+                            onClick={() =>
+                                isLiked ? removeLike(id) : addLike(id)
+                            }
+                        >
+                            {isLiked ? <Favorite /> : <FavoriteBorder />}
+                        </div>
+
                         <p>{likes}</p>
                     </div>
                     <Link to={`/SingleArticle/${url}`}>Read more</Link>
@@ -48,6 +58,21 @@ const HomeArticlesItem = ({
     )
 }
 
-const mapStateToProps = (state, { id }) => ({ isLiked: state[id] })
+const mapStateToProps = (state, { id }) => ({
+    isLiked: state.articlesLikeState[id],
+})
 
-export default connect(mapStateToProps)(HomeArticlesItem)
+const mapDispatchToProps = (dispatch) => ({
+    addLike: (id) =>
+        dispatch({
+            type: 'LIKE',
+            id,
+        }),
+    removeLike: (id) =>
+        dispatch({
+            type: 'DISLIKE',
+            id,
+        }),
+})
+
+export default connect(mapStateToProps, mapDispatchToProps)(HomeArticlesItem)

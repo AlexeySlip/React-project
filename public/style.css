@@ -621,8 +621,11 @@ h2 {
 .post-like p {
     margin: 0;
     padding-left: 2px;
-    padding-top: 1px;
+    padding-bottom: 6px;
     color: #a8a8a8;
+}
+.like {
+    cursor: pointer;
 }
 .home-post-footer a:hover {
     text-decoration: underline;

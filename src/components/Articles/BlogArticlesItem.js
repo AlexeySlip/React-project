@@ -13,6 +13,8 @@ const BlogArticlesItem = ({
     url,
     likes,
     isLiked = false,
+    addLike,
+    removeLike,
 }) => {
     return (
         <>
@@ -41,7 +43,15 @@ const BlogArticlesItem = ({
                     <div className="blog-post-excerpt">{text}</div>
                     <div className="blog-post-footer">
                         <div className="post-like">
-                            {isLiked ? <Favorite /> : <FavoriteBorder />}
+                            <div
+                                className="like"
+                                onClick={() =>
+                                    isLiked ? removeLike(id) : addLike(id)
+                                }
+                            >
+                                {isLiked ? <Favorite /> : <FavoriteBorder />}
+                            </div>
+
                             <p>{likes}</p>
                         </div>
                         <Link to={`/SingleArticle/${url}`}>Read more</Link>
@@ -51,7 +61,21 @@ const BlogArticlesItem = ({
         </>
     )
 }
+const mapStateToProps = (state, { id }) => ({
+    isLiked: state.articlesLikeState[id],
+})
 
-const mapStateToProps = (state, { id }) => ({ isLiked: state[id] })
+const mapDispatchToProps = (dispatch) => ({
+    addLike: (id) =>
+        dispatch({
+            type: 'LIKE',
+            id,
+        }),
+    removeLike: (id) =>
+        dispatch({
+            type: 'DISLIKE',
+            id,
+        }),
+})
 
-export default connect(mapStateToProps)(BlogArticlesItem)
+export default connect(mapStateToProps, mapDispatchToProps)(BlogArticlesItem)
