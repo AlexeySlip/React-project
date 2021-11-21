@@ -2,6 +2,8 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import { FavoriteBorder, Favorite } from '@mui/icons-material'
 import { connect } from 'react-redux'
+import DescriptionIcon from '@mui/icons-material/Description'
+import AccessTimeIcon from '@mui/icons-material/AccessTime'
 
 const HomeArticlesItem = ({
     id,
@@ -25,11 +27,10 @@ const HomeArticlesItem = ({
             </div>
             <div className="home-post-text">
                 <div className="post-head">
-                    <i></i>
                     <span className="green-text">Category: </span>
                     <Link to={`/Blog/${category}`}>{category}</Link>
                     <span> at</span>
-                    <i></i>
+                    <AccessTimeIcon fontSize="small" />
                     <span> {date}</span>
                 </div>
                 <div className="home-post-title">
@@ -46,12 +47,19 @@ const HomeArticlesItem = ({
                                 isLiked ? removeLike(id) : addLike(id)
                             }
                         >
-                            {isLiked ? <Favorite /> : <FavoriteBorder />}
+                            {isLiked ? (
+                                <Favorite fontSize="small" />
+                            ) : (
+                                <FavoriteBorder fontSize="small" />
+                            )}
                         </div>
 
                         <p>{likes}</p>
                     </div>
-                    <Link to={`/SingleArticle/${url}`}>Read more</Link>
+                    <Link to={`/SingleArticle/${url}`}>
+                        <DescriptionIcon fontSize="small" />
+                        Read more
+                    </Link>
                 </div>
             </div>
         </>

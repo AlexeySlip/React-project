@@ -1,5 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import DashboardIcon from '@mui/icons-material/Dashboard'
+import AccessTimeIcon from '@mui/icons-material/AccessTime'
 
 const RelatedPostsItem = ({ image, url, date, title }) => {
     return (
@@ -11,12 +13,18 @@ const RelatedPostsItem = ({ image, url, date, title }) => {
                     </Link>
                 </div>
 
-                <p>{date}</p>
+                <p>
+                    <AccessTimeIcon />
+                    {date}
+                </p>
                 <Link to={`/SingleArticle/${url}`}>
                     <h4>{title}</h4>
                 </Link>
                 <div className="post-btn">
-                    <Link to={`/SingleArticle/${url}`}>Read more</Link>
+                    <Link to={`/SingleArticle/${url}`}>
+                        <DashboardIcon fontSize="small" />
+                        Read more
+                    </Link>
                 </div>
             </div>
         </>

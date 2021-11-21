@@ -1,5 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import DoubleArrowIcon from '@mui/icons-material/DoubleArrow'
+import MenuBookIcon from '@mui/icons-material/MenuBook'
 
 const HomeUpperSection = () => {
     return (
@@ -22,12 +24,14 @@ const HomeUpperSection = () => {
                                     className="home-upper-section-btn"
                                 >
                                     Read more
+                                    <DoubleArrowIcon fontSize="small" />
                                 </Link>
                                 <Link
                                     to="/Blog"
                                     className="home-upper-section-btn"
                                 >
                                     My blog
+                                    <MenuBookIcon fontSize="small" />
                                 </Link>
                             </div>
                         </div>

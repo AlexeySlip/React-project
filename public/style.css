@@ -75,6 +75,13 @@ header .container {
     text-decoration: none;
     transition: 0.35s ease-in-out;
 }
+.menu-icons {
+    display: flex;
+    justify-content: space-evenly;
+}
+.menu-icons a {
+    color: #a6a6a6;
+}
 .menu a:hover {
     color: #a6c354;
 }
@@ -124,6 +131,9 @@ header .container {
     .col-sm-12 {
         flex: 0 0 100%;
         max-width: 100%;
+    }
+    .menu-icons {
+        display: none;
     }
     .header-container {
         position: absolute;
@@ -237,6 +247,9 @@ header .container {
         flex: 0 0 100%;
         max-width: 100%;
     }
+    .menu-icons {
+        display: none;
+    }
     .blog-post-text {
         font-size: 17px;
         line-height: 27px;
@@ -266,6 +279,9 @@ header .container {
 @media (min-width: 1200px) {
     .container {
         max-width: 1140px;
+    }
+    .menu-icons {
+        display: none;
     }
     .blog-post-title {
         margin-top: 30px;
@@ -376,7 +392,7 @@ header .container {
     .menu li:last-child {
         border-bottom: 1px solid rgba(255, 255, 255, 0.03);
     }
-    .menu a {
+    .menu ul a {
         display: block;
         padding: 20px 5px 20px 30px;
         margin-right: 50px;
@@ -507,9 +523,14 @@ header .container {
     border-style: solid;
     border-width: 1px;
     border-radius: 3px;
-    padding: 15px 35px;
-    width: 170px;
+    padding: 10px 25px;
+    width: 160px;
     text-align: center;
+}
+.home-upper-section-btn svg {
+    top: 5px;
+    left: 5px;
+    position: relative;
 }
 .home-upper-section-btn:hover {
     background-color: #a6c354;
@@ -573,8 +594,18 @@ h2 {
 .home-post-text {
     padding: 10px 5px 0;
 }
-.post-head {
+.post-head,
+.blog-post-head {
     color: #a8a8a8;
+}
+.post-head svg,
+.blog-post-head svg {
+    position: relative;
+    top: 5px;
+    left: 2px;
+}
+.about-me-post svg {
+    color: white;
 }
 .post-head a {
     text-decoration: none;
@@ -605,6 +636,13 @@ h2 {
     text-decoration: none;
     color: #a6c354;
 }
+.home-post-footer a svg,
+.blog-post-footer a svg {
+    position: relative;
+    top: 4px;
+    right: 3px;
+    color: grey;
+}
 .blog-post-footer a:hover {
     text-decoration: underline;
     color: #81a029;
@@ -615,8 +653,6 @@ h2 {
 }
 .post-like svg {
     color: #81a029;
-    width: 20px;
-    height: 20px;
 }
 .post-like p {
     margin: 0;
@@ -711,6 +747,11 @@ h2 {
 .photo-gallery-btns {
     margin: 50px 0;
 }
+.photo-gallery-btns svg {
+    position: relative;
+    top: 4px;
+    left: 5px;
+}
 .photo-gallery h2 {
     margin-bottom: 20px;
 }
@@ -756,6 +797,15 @@ h2 {
     border-top: 1px solid rgba(255, 255, 255, 0.1);
     padding: 12px 0;
     color: white;
+}
+.under-line .row {
+    justify-content: space-between;
+    align-items: center;
+}
+.under-line a {
+    text-decoration: none;
+    color: white;
+    margin: 0 5px;
 }
 .blog-upper-section,
 .gallery-upper-section {
@@ -814,9 +864,6 @@ h2 {
 }
 .blog-post-text {
     padding: 10px 5px 0;
-}
-.blog-post-head {
-    color: #a8a8a8;
 }
 .blog-post-head a {
     text-decoration: none;
@@ -971,6 +1018,11 @@ h2 {
 .alps-btn {
     margin: 15px 0;
 }
+.post-btn svg {
+    position: relative;
+    top: 4px;
+    right: 4px;
+}
 .travelers-guides-btn a,
 .post-btn a,
 .alps-btn a {
@@ -1010,6 +1062,11 @@ h2 {
 .single-article-upper-information {
     display: flex;
     justify-content: center;
+}
+.single-article-upper-information svg {
+    color: white;
+    position: relative;
+    top: 2px;
 }
 .single-article-upper-information a {
     text-decoration: none;
@@ -1066,6 +1123,12 @@ h2 {
     color: #e0e0e0;
     line-height: 31px;
 }
+.single-article-quotes svg {
+    color: white;
+    position: relative;
+    top: 6px;
+    margin-right: 4px;
+}
 .related-posts-section h4 {
     color: #ffffff;
     font-size: 18px;
@@ -1082,14 +1145,53 @@ h2 {
 }
 .related-post p {
     color: #a8a8a8;
-    font-size: 12px;
+    font-size: 13px;
     line-height: 18px;
-    padding: 2px 5px;
+    padding: 2px 0;
     margin: 0;
+}
+.related-post svg {
+    width: 15px;
+    height: 15px;
+    position: relative;
+    top: 3px;
+    margin-right: 3px;
 }
 .alps-btn {
     margin-top: 30px;
 }
+.alps-btn svg,
+.travelers-guides-btn svg {
+    position: relative;
+    top: 5px;
+    left: 5px;
+}
+.share-block {
+    display: flex;
+}
 .share-block span {
     color: white;
+    margin-right: 5px;
+}
+.share-block a {
+    color: white;
+    text-decoration: none;
+    margin: 0 3px;
+    position: relative;
+    top: 3px;
+}
+.facebook-icon:hover {
+    color: #3b5998;
+}
+.instagram-icon:hover {
+    color: #8a3ab9;
+}
+.twitter-icon:hover {
+    color: #00acee;
+}
+.you-tube-icon:hover {
+    color: #c4302b;
+}
+.telegram-icon:hover {
+    color: #0088cc;
 }

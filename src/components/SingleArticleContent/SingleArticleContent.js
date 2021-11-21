@@ -2,6 +2,11 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import { FavoriteBorder, Favorite } from '@mui/icons-material'
 import { connect } from 'react-redux'
+import PersonIcon from '@mui/icons-material/Person'
+import InstagramIcon from '@mui/icons-material/Instagram'
+import FacebookIcon from '@mui/icons-material/Facebook'
+import TwitterIcon from '@mui/icons-material/Twitter'
+import TelegramIcon from '@mui/icons-material/Telegram'
 
 const SingleArticleContent = ({
     id,
@@ -65,6 +70,7 @@ const SingleArticleContent = ({
                                         eu
                                     </p>
                                     <Link to="#" className="green-text">
+                                        <PersonIcon fontSize="medium" />
                                         Nullam Risus
                                     </Link>
                                 </div>
@@ -98,6 +104,36 @@ const SingleArticleContent = ({
                             <div className="single-article-content-footer">
                                 <div className="share-block">
                                     <span>Share</span>
+                                    <div>
+                                        <a href="*">
+                                            <FacebookIcon
+                                                fontSize="small"
+                                                className="facebook-icon"
+                                            />
+                                        </a>
+                                        <a href="*">
+                                            {' '}
+                                            <InstagramIcon
+                                                fontSize="small"
+                                                className="instagram-icon"
+                                            />
+                                        </a>
+                                        <a href="*">
+                                            {' '}
+                                            <TwitterIcon
+                                                fontSize="small"
+                                                className="twitter-icon"
+                                            />
+                                        </a>
+
+                                        <a href="*">
+                                            {' '}
+                                            <TelegramIcon
+                                                fontSize="small"
+                                                className="telegram-icon"
+                                            />
+                                        </a>
+                                    </div>
                                 </div>
                                 <div className="post-like">
                                     <div

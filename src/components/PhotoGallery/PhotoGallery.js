@@ -1,5 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import PhotoLibraryIcon from '@mui/icons-material/PhotoLibrary'
+import InstagramIcon from '@mui/icons-material/Instagram'
 
 const PhotoGallery = () => {
     return (
@@ -19,8 +21,14 @@ const PhotoGallery = () => {
                                 malesuada fames ac turpis velit.
                             </p>
                             <div className="photo-gallery-btns">
-                                <Link to="/Gallery">Show photos</Link>
-                                <Link to="/">Instagram</Link>
+                                <Link to="/Gallery">
+                                    Show photos
+                                    <PhotoLibraryIcon fontSize="small" />
+                                </Link>
+                                <Link to="/">
+                                    Instagram
+                                    <InstagramIcon fontSize="small" />
+                                </Link>
                             </div>
                         </div>
                     </div>

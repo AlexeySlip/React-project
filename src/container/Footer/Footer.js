@@ -1,5 +1,10 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import InstagramIcon from '@mui/icons-material/Instagram'
+import FacebookIcon from '@mui/icons-material/Facebook'
+import TwitterIcon from '@mui/icons-material/Twitter'
+import YouTubeIcon from '@mui/icons-material/YouTube'
+import TelegramIcon from '@mui/icons-material/Telegram'
 
 const Footer = () => {
     return (
@@ -58,8 +63,42 @@ const Footer = () => {
                 <div className="under-line">
                     <div className="container">
                         <div className="row">
-                            <div className="col-xs-12 col-md-6 col-sm-6">
-                                <p> © 2021 By Alexey Slipchenko </p>
+                            <p> © 2021 By Alexey Slipchenko </p>
+                            <div>
+                                <a href="*">
+                                    <FacebookIcon
+                                        fontSize="small"
+                                        className="facebook-icon"
+                                    />
+                                </a>
+                                <a href="*">
+                                    {' '}
+                                    <InstagramIcon
+                                        fontSize="small"
+                                        className="instagram-icon"
+                                    />
+                                </a>
+                                <a href="*">
+                                    {' '}
+                                    <TwitterIcon
+                                        fontSize="small"
+                                        className="twitter-icon"
+                                    />
+                                </a>
+                                <a href="*">
+                                    {' '}
+                                    <YouTubeIcon
+                                        fontSize="small"
+                                        className="you-tube-icon"
+                                    />
+                                </a>
+                                <a href="*">
+                                    {' '}
+                                    <TelegramIcon
+                                        fontSize="small"
+                                        className="telegram-icon"
+                                    />
+                                </a>
                             </div>
                         </div>
                     </div>

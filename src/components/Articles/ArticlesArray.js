@@ -35,7 +35,6 @@ const ArticlesArray = [
         text: 'Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis. Maecenas malesuada elit lectus felis, malesuada ultricies. Curabitur et ligula. Ut molestie a, ultricies porta urna. Vestibulum commodo volutpat dolor.',
         likes: 217,
         home: 'true',
-
         url: 'Cum-sociis-natoque-penatibus-et-ultrices-volutpat',
         author: 'Emily Evans',
     },

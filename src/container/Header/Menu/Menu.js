@@ -1,5 +1,10 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
+import InstagramIcon from '@mui/icons-material/Instagram'
+import FacebookIcon from '@mui/icons-material/Facebook'
+import TwitterIcon from '@mui/icons-material/Twitter'
+import YouTubeIcon from '@mui/icons-material/YouTube'
+import TelegramIcon from '@mui/icons-material/Telegram'
 
 const Menu = () => {
     const [navMobileMenu, setNavMobileMenu] = useState('nav-mobile-menu')
@@ -43,6 +48,42 @@ const Menu = () => {
                             <Link to="/Gallery">Gallery</Link>
                         </li>
                     </ul>
+                    <div className="menu-icons">
+                        <a href="*">
+                            <FacebookIcon
+                                fontSize="small"
+                                className="facebook-icon"
+                            />
+                        </a>
+                        <a href="*">
+                            {' '}
+                            <InstagramIcon
+                                fontSize="small"
+                                className="instagram-icon"
+                            />
+                        </a>
+                        <a href="*">
+                            {' '}
+                            <TwitterIcon
+                                fontSize="small"
+                                className="twitter-icon"
+                            />
+                        </a>
+                        <a href="*">
+                            {' '}
+                            <YouTubeIcon
+                                fontSize="small"
+                                className="you-tube-icon"
+                            />
+                        </a>
+                        <a href="*">
+                            {' '}
+                            <TelegramIcon
+                                fontSize="small"
+                                className="telegram-icon"
+                            />
+                        </a>
+                    </div>
                 </div>
             </div>
             <div
