@@ -145,9 +145,9 @@ const SingleArticleContent = ({
                                         }
                                     >
                                         {isLiked ? (
-                                            <Favorite />
+                                            <Favorite fontSize="small" />
                                         ) : (
-                                            <FavoriteBorder />
+                                            <FavoriteBorder fontSize="small" />
                                         )}
                                     </div>
 

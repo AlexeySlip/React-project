@@ -1,8 +1,8 @@
 import React from 'react'
-import ArticlesArray from '../Articles/ArticlesArray'
+import { connect } from 'react-redux'
 import RelatedPostsItem from './RelatedPostsItem'
 
-const RelatedPosts = ({ id }) => {
+const RelatedPosts = ({ ArticlesArray }) => {
     return (
         <>
             <section className="related-posts-section">
@@ -34,4 +34,9 @@ const RelatedPosts = ({ id }) => {
         </>
     )
 }
-export default RelatedPosts
+
+const mapStateToProps = (state) => ({
+    ArticlesArray: state.article,
+})
+
+export default connect(mapStateToProps)(RelatedPosts)

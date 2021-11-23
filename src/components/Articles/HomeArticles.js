@@ -1,8 +1,8 @@
 import React from 'react'
-import ArticlesArray from './ArticlesArray'
+import { connect } from 'react-redux'
 import HomeArticlesItem from './HomeArticlesItem'
 
-const HomeArticles = () => {
+const HomeArticles = ({ ArticlesArray }) => {
     return (
         <>
             {ArticlesArray.filter((item) => item.home === 'true').map(
@@ -27,4 +27,8 @@ const HomeArticles = () => {
     )
 }
 
-export default HomeArticles
+const mapStateToProps = (state) => ({
+    ArticlesArray: state.article,
+})
+
+export default connect(mapStateToProps)(HomeArticles)

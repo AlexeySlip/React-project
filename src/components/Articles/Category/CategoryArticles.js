@@ -1,9 +1,9 @@
 import React from 'react'
+import { connect } from 'react-redux'
 import { useParams } from 'react-router'
-import ArticlesArray from '../ArticlesArray'
 import BlogArticlesItem from '../BlogArticlesItem'
 
-const CategoryArticles = () => {
+const CategoryArticles = ({ ArticlesArray }) => {
     let { category } = useParams()
     return (
         <>
@@ -47,4 +47,8 @@ const CategoryArticles = () => {
     )
 }
 
-export default CategoryArticles
+const mapStateToProps = (state) => ({
+    ArticlesArray: state.article,
+})
+
+export default connect(mapStateToProps)(CategoryArticles)

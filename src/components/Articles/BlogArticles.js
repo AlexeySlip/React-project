@@ -1,8 +1,8 @@
 import React from 'react'
-import ArticlesArray from './ArticlesArray'
+import { connect } from 'react-redux'
 import BlogArticlesItem from './BlogArticlesItem'
 
-const BlogArticles = () => {
+const BlogArticles = ({ ArticlesArray }) => {
     return (
         <>
             <div className="container">
@@ -43,4 +43,8 @@ const BlogArticles = () => {
     )
 }
 
-export default BlogArticles
+const mapStateToProps = (state) => ({
+    ArticlesArray: state.article,
+})
+
+export default connect(mapStateToProps)(BlogArticles)

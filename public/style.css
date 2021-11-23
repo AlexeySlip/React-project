@@ -365,6 +365,7 @@ header .container {
         visibility: visible;
         transform: translateX(0%);
         z-index: 10;
+        position: fixed;
     }
 
     .menu ul {
@@ -402,6 +403,7 @@ header .container {
     }
     .header-container {
         background-color: black;
+        position: fixed;
     }
     .home-upper-section {
         padding: 150px 0;

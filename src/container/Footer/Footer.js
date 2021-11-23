@@ -1,12 +1,54 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import InstagramIcon from '@mui/icons-material/Instagram'
 import FacebookIcon from '@mui/icons-material/Facebook'
 import TwitterIcon from '@mui/icons-material/Twitter'
 import YouTubeIcon from '@mui/icons-material/YouTube'
 import TelegramIcon from '@mui/icons-material/Telegram'
+import { useEffect } from 'react'
 
 const Footer = () => {
+    const GoTop = (props) => {
+        const [intervalId, setIntervalId] = useState(0)
+        const [thePosition, setThePosition] = useState(false)
+
+        const timeoutRef = React.useRef(null)
+
+        useEffect(() => {
+            document.addEventListener('scroll', () => {
+                if (window.scrollY > 170) {
+                    setThePosition(true)
+                } else {
+                    setThePosition(false)
+                }
+            })
+            // window.scrollTo(0, 0);
+        }, [])
+
+        const onScrollStep = () => {
+            if (window.pageYOffset === 0) {
+                clearInterval(timeoutRef.current)
+            }
+            window.scroll(0, window.pageYOffset - props.scrollStepInPx)
+        }
+
+        const scrollToTop = () => {
+            timeoutRef.current = setInterval(onScrollStep, props.delayInMs)
+        }
+
+        const renderGoTopIcon = () => {
+            return (
+                <button
+                    className={`go-top ${thePosition ? 'active' : ''}`}
+                    onClick={scrollToTop}
+                >
+                    Up
+                </button>
+            )
+        }
+
+        return <React.Fragment>{renderGoTopIcon()}</React.Fragment>
+    }
     return (
         <>
             <div className="footer">
@@ -14,7 +56,7 @@ const Footer = () => {
                     <div className="container">
                         <div className="row">
                             <div className="col-xs-12 col-md-6 col-sm-6">
-                                <div className="ащщеук-information">
+                                <div className="footer-information">
                                     <Link to="/">
                                         <img
                                             src="/images/wanderer.png"
@@ -99,6 +141,7 @@ const Footer = () => {
                                         className="telegram-icon"
                                     />
                                 </a>
+                                <GoTop scrollStepInPx="100" delayInMs="10.50" />
                             </div>
                         </div>
                     </div>

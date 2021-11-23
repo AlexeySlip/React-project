@@ -1,11 +1,11 @@
 import React from 'react'
 import { useParams } from 'react-router'
-import ArticlesArray from '../../components/Articles/ArticlesArray'
 import RelatedPosts from '../../components/RelatedPosts/RelatedPosts'
 import SingleArticleUpperSection from '../../components/UpperSection/SingleArticleUpperSection'
 import SingleArticleContent from '../../components/SingleArticleContent/SingleArticleContent'
+import { connect } from 'react-redux'
 
-const SingleArticle = () => {
+const SingleArticle = ({ ArticlesArray }) => {
     let { url } = useParams()
     return (
         <>
@@ -32,4 +32,8 @@ const SingleArticle = () => {
     )
 }
 
-export default SingleArticle
+const mapStateToProps = (state) => ({
+    ArticlesArray: state.article,
+})
+
+export default connect(mapStateToProps)(SingleArticle)
