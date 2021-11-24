@@ -57,7 +57,7 @@ const BlogArticlesItem = ({
                                 )}
                             </div>
 
-                            <p>{likes}</p>
+                            <p>{isLiked ? likes + 1 : likes}</p>
                         </div>
                         <Link to={`/SingleArticle/${url}`}>
                             <DescriptionIcon fontSize="small" />

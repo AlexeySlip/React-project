@@ -151,7 +151,7 @@ const SingleArticleContent = ({
                                         )}
                                     </div>
 
-                                    <p>{likes}</p>
+                                    <p>{isLiked ? likes + 1 : likes}</p>
                                 </div>
                             </div>
                         </div>
