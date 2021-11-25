@@ -7,27 +7,19 @@ import YouTubeIcon from '@mui/icons-material/YouTube'
 import TelegramIcon from '@mui/icons-material/Telegram'
 
 const Menu = () => {
-    const [navMobileMenu, setNavMobileMenu] = useState('nav-mobile-menu')
+    const [activeMenu, setActiveMenu] = useState('')
 
-    const [navigation, setNavigation] = useState('navigation')
-
-    const activeMenu = () => {
-        setNavMobileMenu(
-            navMobileMenu === 'nav-mobile-menu'
-                ? 'nav-mobile-menu active-menu'
-                : 'nav-mobile-menu'
-        )
-
-        setNavigation(
-            navigation === 'navigation'
-                ? 'navigation active-menu'
-                : 'navigation'
+    const activeMenuClick = () => {
+        setActiveMenu(
+            activeMenu === ''
+                ? 'active-menu'
+                : ''
         )
     }
 
     return (
         <>
-            <div className={navigation}>
+            <div className={`navigation ${activeMenu}`}>
                 <div className="menu">
                     <ul>
                         <li>
@@ -87,9 +79,8 @@ const Menu = () => {
                 </div>
             </div>
             <div
-                // className="nav-mobile-menu "
-                className={navMobileMenu}
-                onClick={activeMenu}
+               className={`nav-mobile-menu ${activeMenu}`}
+                onClick={activeMenuClick}
             >
                 <span></span>
                 <span></span>

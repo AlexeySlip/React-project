@@ -20,11 +20,9 @@ body {
     left: 0;
     right: 0;
     z-index: 20;
-}
-header .container {
     border-bottom: 1px solid rgba(161, 168, 137, 0.2);
-    z-index: 10;
 }
+
 .row {
     display: flex;
     flex-wrap: wrap;
@@ -42,14 +40,12 @@ header .container {
 .header-content {
     display: flex;
 }
-
 .logo {
     margin: 0 30px;
 }
 .logo a {
     display: block;
     line-height: 60px;
-    padding: 15px 0;
 }
 .logo a img {
     vertical-align: middle;
@@ -66,7 +62,6 @@ header .container {
 .menu a {
     color: white;
     display: block;
-    padding: 15px 0;
     line-height: 60px;
     position: relative;
     font-size: 17px;
@@ -137,6 +132,14 @@ header .container {
     }
     .header-container {
         position: absolute;
+        padding: 15px 0;
+    }
+    .header-container.scroll-menu {
+        position: fixed;
+        padding: 0;
+        border-bottom: none;
+        background-color: #121110;
+        transition: background-color 0.5s ease-in-out;
     }
     .home-upper-section-btn {
         margin: 0 10px;
@@ -319,7 +322,7 @@ header .container {
         height: 20px;
         position: absolute;
         left: 90%;
-        top: 39px;
+        top: 22px;
         z-index: 10;
     }
     .nav-mobile-menu span {
@@ -490,6 +493,9 @@ header .container {
         line-height: 35px;
         letter-spacing: 0px;
     }
+    .under-line .row {
+        flex-direction: column;
+    }
 }
 .home-upper-section {
     background: url('/images/home-upper-section.jpg') center center no-repeat;
@@ -592,6 +598,9 @@ h2 {
 .home-post,
 .about-me-post {
     margin-bottom: 20px;
+}
+.about-me-post a {
+    text-decoration: none;
 }
 .home-post-text {
     padding: 10px 5px 0;
@@ -1196,4 +1205,17 @@ h2 {
 }
 .telegram-icon:hover {
     color: #0088cc;
+}
+.go-top {
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    display: none;
+    border-radius: 20px;
+    border-color: transparent;
+    background-color: white;
+    cursor: pointer;
+}
+.go-top.active {
+    display: block;
 }
