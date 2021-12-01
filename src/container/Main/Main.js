@@ -6,7 +6,6 @@ import Category from '../../pages/Category/Category'
 import Gallery from '../../pages/Gallery/Gallery'
 import Home from '../../pages/Home/Home'
 import SingleArticle from '../../pages/SingleArticle/SingleArticle'
-import { useEffect } from 'react'
 import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp'
 
 const Main = () => {
@@ -15,15 +14,13 @@ const Main = () => {
 
         const timeoutRef = useRef(null)
 
-        useEffect(() => {
-            document.addEventListener('scroll', () => {
-                if (window.scrollY > 200) {
-                    setThePosition('active')
-                } else {
-                    setThePosition('')
-                }
-            })
-        }, [])
+        document.addEventListener('scroll', () => {
+            if (window.scrollY > 200) {
+                setThePosition('active')
+            } else {
+                setThePosition('')
+            }
+        })
 
         const onScrollStep = () => {
             if (window.pageYOffset === 0) {

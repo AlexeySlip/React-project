@@ -9,7 +9,7 @@ const WhatYouNeed = () => {
                         <div className="col-xs-12 col-md-12 col-sm-12">
                             <h2>What you need?</h2>
                         </div>
-                        <div className="col-xs-12 col-md-3 col-sm-6">
+                        <div className="col-xs-12 col-md-3 col-sm-3">
                             <div className="what-you-need-image">
                                 <img
                                     src="./images/home_behind_pic2.png"
@@ -23,7 +23,7 @@ const WhatYouNeed = () => {
                                 dapibus.
                             </p>
                         </div>
-                        <div className="col-xs-12 col-md-3 col-sm-6">
+                        <div className="col-xs-12 col-md-3 col-sm-3">
                             <div className="what-you-need-image">
                                 <img
                                     src="./images/home_behind_pic3.png"
@@ -37,7 +37,7 @@ const WhatYouNeed = () => {
                                 dapibus.
                             </p>
                         </div>
-                        <div className="col-xs-12 col-md-3 col-sm-6">
+                        <div className="col-xs-12 col-md-3 col-sm-3">
                             <div className="what-you-need-image">
                                 <img
                                     src="./images/home_behind_pic4.png"
@@ -51,7 +51,7 @@ const WhatYouNeed = () => {
                                 dapibus.
                             </p>
                         </div>
-                        <div className="col-xs-12 col-md-3 col-sm-6">
+                        <div className="col-xs-12 col-md-3 col-sm-3">
                             <div className="what-you-need-image">
                                 <img
                                     src="./images/home_behind_pic5.png"

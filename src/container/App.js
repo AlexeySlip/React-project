@@ -4,16 +4,15 @@ import Header from './Header/Header'
 import Main from './Main/Main'
 import Footer from './Footer/Footer'
 import { connect, useDispatch } from 'react-redux'
-import fetchProducts from '../redux/article.action'
+import fetchData from '../redux/article.action'
 import CloseIcon from '@mui/icons-material/Close'
 
 const App = ({ modal, modalNotActive }) => {
     useEffect(() => {
-        dispatch(fetchProducts())
+        dispatch(fetchData())
     })
 
     const dispatch = useDispatch()
-
     return (
         <>
             <CssBaseline />

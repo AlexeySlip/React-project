@@ -141,7 +141,8 @@ body {
         background-color: #121110;
         transition: background-color 0.5s ease-in-out;
     }
-    .home-upper-section-btn {
+    .home-upper-section-btn,
+    .photo-gallery-btns a {
         margin: 0 10px;
     }
     .home-upper-section {
@@ -166,26 +167,28 @@ body {
         font-size: 14px;
         line-height: 23px;
         letter-spacing: 0px;
+        padding: 0px 5px;
     }
     .about-me-upper-section-text h1 {
-        font-size: 55px;
-        line-height: 60px;
+        font-size: 47px;
+        line-height: 51px;
     }
     .about-me-upper-section-text h3 {
-        font-size: 26px;
-        line-height: 36px;
+        font-size: 22px;
+        line-height: 31px;
     }
     [class*='about-me-argument-'] {
         width: 48%;
         margin: 0 1% 40px;
     }
     [class*='about-me-argument-'] h3 {
-        font-size: 42px;
-        line-height: 42px;
+        font-size: 24px;
+        line-height: 24px;
+        margin-top: 5px;
     }
     [class*='about-me-argument-'] h4 {
-        font-size: 18px;
-        line-height: 25px;
+        font-size: 15px;
+        line-height: 20px;
     }
     .about-me-post-image {
         height: 250px;
@@ -194,7 +197,8 @@ body {
     .about-me-last-news .col-sm-6 {
         padding: 0;
     }
-    .travelers-guides-text p {
+    .travelers-guides-text p,
+    .travelers-guides-btn a {
         font-size: 14px;
         line-height: 23px;
         letter-spacing: 0px;
@@ -206,6 +210,74 @@ body {
     }
     .modal-block {
         width: 73%;
+    }
+    .go-top {
+        bottom: 40px;
+        right: 35px;
+    }
+    h2 {
+        font-size: 41px;
+        line-height: 49px;
+    }
+    .blog-upper-section h3,
+    .gallery-upper-section h3 {
+        font-size: 22px;
+        line-height: 31px;
+    }
+
+    .single-article-upper-section h1 {
+        font-size: 60px;
+        line-height: 60px;
+    }
+    .single-article-upper-information a,
+    .single-article-upper-information p {
+        font-size: 17px;
+    }
+    .single-article-content-entry h3 {
+        font-size: 20px;
+        line-height: 35px;
+    }
+    .single-article-text,
+    .related-post {
+        font-size: 15px;
+        line-height: 23px;
+    }
+    .related-posts-section h4 {
+        font-size: 15px;
+        line-height: 21px;
+    }
+    .home-upper-section h2 {
+        line-height: 53px;
+        font-size: 53px;
+    }
+    .home-upper-section p {
+        font-size: 19px;
+    }
+    .about-me-post {
+        font-size: 14px;
+        line-height: 23px;
+    }
+    .footer,
+    .photo-gallery-content p {
+        font-size: 17px;
+        line-height: 27px;
+    }
+    .what-you-need h4 {
+        font-size: 15px;
+        line-height: 21px;
+    }
+    .what-you-need p {
+        font-size: 14px;
+        line-height: 23px;
+    }
+    .home-post-text,
+    .alps-text {
+        font-size: 14px;
+        line-height: 23px;
+    }
+    .footer {
+        font-size: 17px;
+        line-height: 27px;
     }
 }
 /* laptop */
@@ -261,15 +333,16 @@ body {
         line-height: 27px;
         font-weight: 400;
         letter-spacing: 0px;
+        padding: 10px 5px 0;
     }
-
     .blog-post-footer {
         margin-top: 30px;
     }
     .about-me-post-image {
         height: 330px;
     }
-    .travelers-guides-text p {
+    .travelers-guides-text p,
+    .travelers-guides-btn a {
         font-size: 17px;
         line-height: 27px;
         letter-spacing: 0px;
@@ -279,6 +352,71 @@ body {
         line-height: 58px;
         font-weight: 700;
         letter-spacing: 0px;
+    }
+    .go-top {
+        bottom: 40px;
+        right: 35px;
+    }
+    h2 {
+        font-size: 48px;
+        line-height: 58px;
+    }
+    .blog-upper-section h3,
+    .gallery-upper-section h3 {
+        font-size: 26px;
+        line-height: 36px;
+    }
+    .single-article-upper-section h1 {
+        font-size: 70px;
+        line-height: 70px;
+    }
+    .single-article-text,
+    .related-post {
+        font-size: 17px;
+        line-height: 27px;
+    }
+    .related-posts-section h4 {
+        font-size: 18px;
+        line-height: 25px;
+    }
+    .about-me-upper-section-text h1 {
+        font-size: 55px;
+        line-height: 60px;
+    }
+    .about-me-upper-section-text h3 {
+        font-size: 26px;
+        line-height: 36px;
+    }
+    [class*='about-me-argument-'] {
+        width: 48%;
+        margin: 0 1% 40px;
+    }
+    [class*='about-me-argument-'] h3 {
+        font-size: 42px;
+        line-height: 42px;
+        margin-top: 5px;
+    }
+    [class*='about-me-argument-'] h4 {
+        font-size: 18px;
+        line-height: 25px;
+    }
+    .about-me-post {
+        font-size: 17px;
+        line-height: 27px;
+        font-weight: 400;
+    }
+    .what-you-need h4 {
+        font-size: 18px;
+        line-height: 25px;
+    }
+    .what-you-need p {
+        font-size: 17px;
+        line-height: 27px;
+    }
+    .home-post-text,
+    .alps-text {
+        font-size: 17px;
+        line-height: 27px;
     }
 }
 /* desktop */
@@ -308,6 +446,17 @@ body {
         line-height: 58px;
         font-weight: 700;
         letter-spacing: 0px;
+    }
+    .go-top {
+        bottom: 50px;
+        right: 45px;
+    }
+    .alps-text {
+        padding: 40px 0 0 10%;
+    }
+    .single-article-content-entry h3 {
+        font-size: 26px;
+        line-height: 36px;
     }
 }
 /* only mobile */
@@ -373,7 +522,6 @@ body {
         z-index: 10;
         position: fixed;
     }
-
     .menu ul {
         flex-direction: column;
     }
@@ -395,7 +543,6 @@ body {
     .menu li {
         border-top: 1px solid rgba(255, 255, 255, 0.03);
     }
-
     .menu li:last-child {
         border-bottom: 1px solid rgba(255, 255, 255, 0.03);
     }
@@ -414,7 +561,8 @@ body {
     .home-upper-section {
         padding: 150px 0;
     }
-    .home-upper-section-btns {
+    .home-upper-section-btns,
+    .photo-gallery-btns {
         flex-direction: column;
         align-items: center;
     }
@@ -451,6 +599,7 @@ body {
         font-size: 13px;
         line-height: 19px;
         letter-spacing: 0px;
+        padding: 10px 5px 0;
     }
     .about-me-upper-section-text,
     .about-me-upper-section-arguments,
@@ -470,8 +619,9 @@ body {
         margin: 0 0 20px;
     }
     [class*='about-me-argument-'] h3 {
-        font-size: 40px;
-        line-height: 40px;
+        font-size: 35px;
+        line-height: 35px;
+        margin-top: 10px;
     }
     [class*='about-me-argument-'] h4 {
         font-size: 13px;
@@ -486,7 +636,8 @@ body {
     .travelers-guides-image img {
         margin-top: 20px;
     }
-    .travelers-guides-text p {
+    .travelers-guides-text p,
+    .travelers-guides-btn a {
         font-size: 13px;
         line-height: 19px;
         letter-spacing: 0px;
@@ -502,18 +653,98 @@ body {
     .modal-block {
         width: 100%;
     }
+    .go-top {
+        bottom: 35px;
+        right: 25px;
+    }
+    h2 {
+        font-size: 29px;
+        line-height: 35px;
+    }
+    .blog-upper-section h3,
+    .gallery-upper-section h3 {
+        font-size: 16px;
+        line-height: 22px;
+    }
+    .home-upper-section-btn,
+    .photo-gallery-btns a {
+        margin: 10px 0;
+    }
+    .single-article-upper-section h1 {
+        font-size: 45px;
+        line-height: 50px;
+    }
+    .single-article-upper-information a,
+    .single-article-upper-information p {
+        font-size: 15px;
+    }
+    .single-article-content-entry h3 {
+        font-size: 16px;
+        line-height: 22px;
+    }
+    .single-article-text {
+        font-size: 13px;
+        line-height: 19px;
+    }
+    .related-post {
+        font-size: 13px;
+        line-height: 19px;
+        margin-bottom: 40px;
+    }
+    .related-posts-section h4 {
+        font-size: 15px;
+        line-height: 19px;
+    }
+    .home-upper-section h2 {
+        line-height: 45px;
+        font-size: 45px;
+    }
+    .home-upper-section p {
+        font-size: 15px;
+    }
+    .about-me-post {
+        font-size: 13px;
+        line-height: 19px;
+    }
+    .footer,
+    .photo-gallery-content p {
+        font-size: 15px;
+        line-height: 20px;
+    }
+    .what-you-need h4 {
+        font-size: 16px;
+        line-height: 19px;
+    }
+    .what-you-need p {
+        font-size: 15px;
+        line-height: 19px;
+    }
+    .what-you-need [class*='col-xs-12'] {
+        margin-bottom: 25px;
+        text-align: center;
+    }
+    .home-post-text,
+    .alps-text {
+        font-size: 14px;
+        line-height: 19px;
+    }
+    .alps-text {
+        padding: 20px 0 0 5%;
+    }
+}
+.alps [class*='row'] {
+    align-items: center;
 }
 .home-upper-section {
     background: url('/images/home-upper-section.jpg') center center no-repeat;
     background-size: cover;
 }
-.home-upper-section-content {
+.home-upper-section-content,
+.photo-gallery-content {
     display: flex;
     justify-content: center;
 }
 .home-upper-section h2 {
-    line-height: 53px;
-    font-size: 53px;
     text-align: center;
 }
 .home-upper-section p {
@@ -521,24 +752,21 @@ body {
     text-align: center;
     margin-bottom: 40px;
     font-weight: 400;
-    font-size: 19px;
 }
-.home-upper-section-btns {
+.home-upper-section-btns,
+.photo-gallery-btns {
     display: flex;
     justify-content: center;
 }
 .home-upper-section-btn {
     text-decoration: none;
     color: white;
-    cursor: pointer;
     font-weight: 500;
-    font-size: 19px;
-    border-color: rgb(48, 60, 42);
-    border-style: solid;
-    border-width: 1px;
+    font-size: 18px;
+    border: 1px solid #2d2f21;
     border-radius: 3px;
     padding: 10px 25px;
-    width: 160px;
+    width: 155px;
     text-align: center;
 }
 .home-upper-section-btn svg {
@@ -587,12 +815,8 @@ body {
     background: url('images/home_behind_pic10.png') no-repeat left 3px;
     padding-left: 35px;
 }
-.alps-text {
-    padding: 40px 0 0 10%;
-}
+
 h2 {
-    font-size: 48px;
-    line-height: 58px;
     font-weight: 700;
     letter-spacing: 0px;
     color: white;
@@ -664,7 +888,8 @@ h2 {
     text-decoration: underline;
     color: #81a029;
 }
-.post-like {
+.post-like,
+.share-block {
     display: flex;
     align-items: center;
 }
@@ -694,8 +919,6 @@ h2 {
 }
 .what-you-need h4 {
     font-family: 'PT Serif', Helvetica, Arial, sans-serif;
-    font-size: 18px;
-    line-height: 25px;
     font-weight: 700;
     letter-spacing: 0px;
     color: white;
@@ -703,8 +926,6 @@ h2 {
 }
 .what-you-need p {
     font-family: 'Yantramanav', Helvetica, Arial, sans-serif;
-    font-size: 17px;
-    line-height: 27px;
     font-weight: 400;
     letter-spacing: 0px;
     color: white;
@@ -750,7 +971,6 @@ h2 {
     justify-content: center;
 }
 .photo-gallery-content {
-    width: 55%;
     text-align: center;
     padding-top: 90px;
     padding-bottom: 10px;
@@ -775,11 +995,11 @@ h2 {
 .photo-gallery-btns a {
     text-decoration: none;
     color: white;
-    padding: 15px 30px;
+    padding: 10px 25px;
     border: 1px solid #2d2f21;
     border-radius: 3px;
-    margin: 0 10px;
     font-weight: 500;
+    width: 165px;
 }
 .photo-gallery-btns a:hover {
     background-color: #a6c354;
@@ -845,8 +1065,6 @@ h2 {
 }
 .blog-upper-section h3,
 .gallery-upper-section h3 {
-    font-size: 26px;
-    line-height: 36px;
     font-weight: 400;
     letter-spacing: 0px;
     font-family: 'PT Serif', Helvetica, Arial, sans-serif;
@@ -879,9 +1097,6 @@ h2 {
 }
 .blog-post-image img:hover {
     transform: scale(1.1);
-}
-.blog-post-text {
-    padding: 10px 5px 0;
 }
 .blog-post-head a {
     text-decoration: none;
@@ -918,6 +1133,7 @@ h2 {
 .about-me-upper-section-text h1 {
     font-weight: 700;
     letter-spacing: 0px;
+    margin: 0 0 15px;
 }
 .about-me-upper-section-text h3 {
     font-weight: 400;
@@ -935,7 +1151,7 @@ h2 {
 [class*='about-me-argument-'] h3 {
     font-weight: 400;
     letter-spacing: 0px;
-    margin: 0 0 15px;
+    margin-bottom: 15px;
 }
 [class*='about-me-argument-'] h4 {
     font-weight: 700;
@@ -1046,10 +1262,8 @@ h2 {
 .alps-btn a {
     background-color: #2d2c28;
     padding: 10px 25px;
-    font-size: inherit;
     overflow: hidden;
     text-decoration: none;
-    cursor: pointer;
     transition: all 0.1s ease-in-out;
 }
 .single-article-upper-section {
@@ -1068,8 +1282,6 @@ h2 {
     align-items: center;
 }
 .single-article-upper-section h1 {
-    font-size: 70px;
-    line-height: 70px;
     font-weight: 400;
     letter-spacing: 0px;
     margin: 20px;
@@ -1080,6 +1292,7 @@ h2 {
 .single-article-upper-information {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 .single-article-upper-information svg {
     color: white;
@@ -1095,7 +1308,6 @@ h2 {
 .single-article-upper-information a,
 .single-article-upper-information p {
     font-family: 'Yantramanav', Helvetica, Arial, sans-serif;
-    font-size: 17px;
     line-height: 27px;
     font-weight: 400;
     letter-spacing: 0px;
@@ -1110,8 +1322,6 @@ h2 {
 }
 .single-article-content-entry h3 {
     text-align: center;
-    font-size: 26px;
-    line-height: 36px;
     font-weight: 400;
     letter-spacing: 0px;
     color: white;
@@ -1149,8 +1359,6 @@ h2 {
 }
 .related-posts-section h4 {
     color: #ffffff;
-    font-size: 18px;
-    line-height: 25px;
     font-weight: 700;
     letter-spacing: 0px;
     font-family: 'PT Serif', Helvetica, Arial, sans-serif;
@@ -1184,9 +1392,6 @@ h2 {
     top: 5px;
     left: 5px;
 }
-.share-block {
-    display: flex;
-}
 .share-block span {
     color: white;
     margin-right: 5px;
@@ -1215,8 +1420,6 @@ h2 {
 }
 .go-top {
     position: fixed;
-    bottom: 50px;
-    right: 50px;
     display: none;
     border-radius: 20px;
     border-color: transparent;

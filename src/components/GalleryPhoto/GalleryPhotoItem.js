@@ -1,8 +1,7 @@
 import React from 'react'
 import { connect } from 'react-redux'
-import GalleryPhotoArray from './GalleryPhotoArray'
 
-const GalleryPhotoItem = ({ modalActive }) => {
+const GalleryPhotoItem = ({ modalActive, GalleryPhotoArray }) => {
     return (
         <>
             {GalleryPhotoArray.map(({ id, image }) => (
@@ -21,8 +20,8 @@ const GalleryPhotoItem = ({ modalActive }) => {
 }
 const mapStateToProps = (state) => ({
     modal: state.modalImage,
+    GalleryPhotoArray: state.gallery,
 })
-
 const mapDispatchToProps = (dispatch) => ({
     modalActive: (image) =>
         dispatch({

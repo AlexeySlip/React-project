@@ -1,14 +1,18 @@
 import axios from 'axios'
 
-const fetchProducts = () => (dispatch) => {
+const fetchData = () => (dispatch) => {
     axios
-        .get('https://run.mocky.io/v3/6a405908-0961-4411-a110-de9c5b72d324')
+        .get('https://run.mocky.io/v3/c602ef1d-eac5-41b2-be57-0cadaad8e10d')
         .then((res) => res.data)
         .then((data) => {
             dispatch({
                 type: 'ARTICLE_SUCCESS',
                 article: data.article,
             })
+            dispatch({
+                type: 'GALLERY_SUCCESS',
+                gallery: data.gallery,
+            })
         })
 }
-export default fetchProducts
+export default fetchData

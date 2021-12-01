@@ -10,25 +10,27 @@ const PhotoGallery = () => {
                 <div className="container">
                     <div className="row">
                         <div className="photo-gallery-content">
-                            <h2>Photo gallery</h2>
-                            <p>
-                                Phasellus fermentum in, over{' '}
-                                <span className="green-text">
-                                    10’000 photos
-                                </span>
-                                . Pellentesque facilisis. Nulla imperdiet sit
-                                amet magna. Vestibulum dapibus, mauris nec
-                                malesuada fames ac turpis velit.
-                            </p>
-                            <div className="photo-gallery-btns">
-                                <Link to="/Gallery">
-                                    Show photos
-                                    <PhotoLibraryIcon fontSize="small" />
-                                </Link>
-                                <Link to="/">
-                                    Instagram
-                                    <InstagramIcon fontSize="small" />
-                                </Link>
+                            <div className="col-xs-12 col-md-8 col-sm-12">
+                                <h2>Photo gallery</h2>
+                                <p>
+                                    Phasellus fermentum in, over{' '}
+                                    <span className="green-text">
+                                        10’000 photos
+                                    </span>
+                                    . Pellentesque facilisis. Nulla imperdiet
+                                    sit amet magna. Vestibulum dapibus, mauris
+                                    nec malesuada fames ac turpis velit.
+                                </p>
+                                <div className="photo-gallery-btns">
+                                    <Link to="/Gallery">
+                                        Show photos
+                                        <PhotoLibraryIcon fontSize="small" />
+                                    </Link>
+                                    <Link to="/">
+                                        Instagram
+                                        <InstagramIcon fontSize="small" />
+                                    </Link>
+                                </div>
                             </div>
                         </div>
                     </div>

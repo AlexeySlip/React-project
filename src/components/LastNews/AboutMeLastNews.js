@@ -1,7 +1,7 @@
 import React from 'react'
 import AboutMeArticles from '../Articles/AboutMeArticles'
 
-const HomeLastNews = () => {
+const AboutMeLastNews = () => {
     return (
         <>
             <section className="about-me-last-news">
@@ -18,4 +18,4 @@ const HomeLastNews = () => {
     )
 }
 
-export default HomeLastNews
+export default AboutMeLastNews

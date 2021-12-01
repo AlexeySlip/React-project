@@ -12,19 +12,17 @@ const SingleArticle = ({ ArticlesArray }) => {
             <div className="single-article">
                 {ArticlesArray.filter((item) => item.url === url).map(
                     ({ id, image, title, author, date, category, likes }) => (
-                        <>
-                            <div className="single-article">
-                                <SingleArticleUpperSection
-                                    image={image}
-                                    title={title}
-                                    author={author}
-                                    date={date}
-                                    category={category}
-                                />
-                                <SingleArticleContent id={id} likes={likes} />
-                                <RelatedPosts id={id} />
-                            </div>
-                        </>
+                        <div className="single-article" key={id}>
+                            <SingleArticleUpperSection
+                                image={image}
+                                title={title}
+                                author={author}
+                                date={date}
+                                category={category}
+                            />
+                            <SingleArticleContent id={id} likes={likes} />
+                            <RelatedPosts id={id} />
+                        </div>
                     )
                 )}
             </div>

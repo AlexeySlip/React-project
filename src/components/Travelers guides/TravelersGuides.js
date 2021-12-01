@@ -1,5 +1,6 @@
 import React from 'react'
 import DoubleArrowIcon from '@mui/icons-material/DoubleArrow'
+import { Link } from 'react-router-dom'
 
 const TravelersGuides = () => {
     return (
@@ -28,10 +29,10 @@ const TravelersGuides = () => {
                                     sapien massa
                                 </p>
                                 <div className="travelers-guides-btn">
-                                    <a href="/AboutMe">
+                                    <Link to="/AboutMe">
                                         Buy now
                                         <DoubleArrowIcon fontSize="small" />
-                                    </a>
+                                    </Link>
                                 </div>
                             </div>
                         </div>
