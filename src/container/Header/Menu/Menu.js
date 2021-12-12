@@ -10,11 +10,7 @@ const Menu = () => {
     const [activeMenu, setActiveMenu] = useState('')
 
     const activeMenuClick = () => {
-        setActiveMenu(
-            activeMenu === ''
-                ? 'active-menu'
-                : ''
-        )
+        setActiveMenu(activeMenu === '' ? 'active-menu' : '')
     }
 
     return (
@@ -23,21 +19,32 @@ const Menu = () => {
                 <div className="menu">
                     <ul>
                         <li>
-                            <Link to="/">Home</Link>
+                            <Link to="/" onClick={activeMenuClick}>
+                                Home
+                            </Link>
                         </li>
                         <li>
-                            <Link to="/AboutMe">About me</Link>
+                            <Link to="/AboutMe" onClick={activeMenuClick}>
+                                About me
+                            </Link>
                         </li>
                         <li>
-                            <Link to="/Blog">Blog</Link>
+                            <Link to="/Blog" onClick={activeMenuClick}>
+                                Blog
+                            </Link>
                         </li>
                         <li>
-                            <Link to="/SingleArticle/Aliquam-sem">
+                            <Link
+                                to="/SingleArticle/Aliquam-sem"
+                                onClick={activeMenuClick}
+                            >
                                 Single article
                             </Link>
                         </li>
                         <li>
-                            <Link to="/Gallery">Gallery</Link>
+                            <Link to="/Gallery" onClick={activeMenuClick}>
+                                Gallery
+                            </Link>
                         </li>
                     </ul>
                     <div className="menu-icons">
@@ -79,7 +86,7 @@ const Menu = () => {
                 </div>
             </div>
             <div
-               className={`nav-mobile-menu ${activeMenu}`}
+                className={`nav-mobile-menu ${activeMenu}`}
                 onClick={activeMenuClick}
             >
                 <span></span>

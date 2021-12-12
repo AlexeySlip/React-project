@@ -7,6 +7,24 @@ import { connect, useDispatch } from 'react-redux'
 import fetchData from '../redux/article.action'
 import CloseIcon from '@mui/icons-material/Close'
 
+function Modal({ modalNotActive, active, image }) {
+    return active ? (
+        <div className="modal" onClick={modalNotActive}>
+            <div
+                className="modal-block"
+                onClick={(e) => {
+                    e.stopPropagation()
+                }}
+            >
+                <div className="modal-close">
+                    <CloseIcon onClick={modalNotActive} />
+                </div>
+                <img src={image} alt="" />
+            </div>
+        </div>
+    ) : null
+}
+
 const App = ({ modal, modalNotActive }) => {
     useEffect(() => {
         dispatch(fetchData())
@@ -19,18 +37,12 @@ const App = ({ modal, modalNotActive }) => {
             <Header />
             <Main />
             <Footer />
-            {modal.active ? (
-                <div className="modal">
-                    <div className="modal-block">
-                        <div className="modal-close">
-                            <CloseIcon onClick={modalNotActive} />
-                        </div>
-                        <img src={modal.image} alt="" />
-                    </div>
-                </div>
-            ) : (
-                ''
-            )}
+
+            <Modal
+                modalNotActive={modalNotActive}
+                active={modal.active}
+                image={modal.image}
+            />
         </>
     )
 }
