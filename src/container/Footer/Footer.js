@@ -63,7 +63,7 @@ const Footer = () => {
                 <div className="under-line">
                     <div className="container">
                         <div className="row">
-                            <p> © 2021 By Alexey Slipchenko </p>
+                            <p> © Alexey Slipchenko </p>
                             <div>
                                 <a href="*">
                                     <FacebookIcon
